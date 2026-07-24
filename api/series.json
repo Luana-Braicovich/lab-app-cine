@@ -1,0 +1,54 @@
+{
+    "seriesPopulares": [
+        {
+            "tipo": "serie",
+            "titulo": "The Last of Us",
+            "poster": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/1/w1280/tNQWO6cNzQYCyvw36mUcAQQyf5F.jpg"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "Stranger Things",
+            "poster": "https://es.web.img3.acsta.net/pictures/22/05/14/13/26/5638861.jpg"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "Breaking Bad",
+            "poster": "https://es.web.img3.acsta.net/pictures/18/04/04/22/52/3191575.jpg"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "The Crown",
+            "poster": "https://resizing.flixster.com/aX9Yz5sNV2WpBA5CoENzIl9RbTM=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjI2NTU1OS53ZWJw"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "Game of Thrones",
+            "poster": "https://m.media-amazon.com/images/M/MV5BOGY3NTg1ODMtOGIzZS00YWFiLTgzYzktNzBiYWZkYjcwNGRhXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "The Mandalorian",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNjgxZGM0OWUtZGY1MS00MWRmLTk2N2ItYjQyZTI1OThlZDliXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "Fargo",
+            "poster": "https://image.tmdb.org/t/p/original/6U9CPeD8obHzweikFhiLhpc7YBT.jpg"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "The Witcher",
+            "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZqz1rrXvNC59cW6SmAS0-z0m2otYGJ-YIg&s"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "Black Mirror",
+            "poster": "https://hips.hearstapps.com/hmg-prod/images/black-mirror-font-1513096756.jpg"
+        },
+        {
+            "tipo": "serie",
+            "titulo": "La Casa De Papel",
+            "poster": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2017/5/w1280/z01Dc0Ly2GmCpLe6Scx4d3dPP1S.jpg"
+        }
+    ]
+}
