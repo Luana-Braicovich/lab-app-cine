@@ -1,5 +1,5 @@
 {
-    "peliculasPopulares": [
+    "POPULARES": [
         {
             "tipo": "pelicula",
             "titulo": "Inception",
@@ -56,7 +56,7 @@
             "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_.jpg"
         }
     ],
-    "proximamente": [
+    "PROXIMAMENTE": [
         {
             "titulo": "El gato con sombrero",
             "poster": "https://m.media-amazon.com/images/M/MV5BZmJhNzk4OGMtOTlmNC00ODAxLWFkYjYtY2RhYWVmNDg5YmViXkEyXkFqcGc@._V1_FMjpg_UY474_.jpg"
@@ -90,7 +90,7 @@
             "poster": "https://m.media-amazon.com/images/M/MV5BYTAyMjgxZjctMjRjNC00Zjg1LWJiNzctMDkxYzk0NWVmODMwXkEyXkFqcGc@._V1_.jpg"
         }
     ],
-    "terror": [
+    "TERROR": [
         {
             "tipo": "pelicula",
             "titulo": "Talk to Me",
@@ -154,7 +154,7 @@
             "poster": "https://m.media-amazon.com/images/M/MV5BNmM5ZThhY2ItOGRjOS00NzZiLWEwYTItNDgyMjFkOTgxMmRiXkEyXkFqcGc@._V1_.jpg"
         }
     ],
-    "accion": [
+    "ACCION": [
         {
             "tipo": "pelicula",
             "titulo": "John Wick: Chapter 4",
@@ -206,7 +206,7 @@
             "poster": "https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
         }
     ],
-    "animacion": [
+    "ANIMACION": [
         {
             "tipo": "pelicula",
             "titulo": "Robot Dreams",
@@ -258,7 +258,7 @@
             "poster": "https://m.media-amazon.com/images/M/MV5BMzA5Zjg3MTAtM2FhZS00NTNjLTg3NjEtNWQ4MTRhZjhiNzVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
         }
     ],
-    "romance": [
+    "ROMANCE": [
         {
             "tipo": "pelicula",
             "titulo": "Yo Antes de Ti",
@@ -310,7 +310,7 @@
             "poster": "https://m.media-amazon.com/images/M/MV5BMTYxNDMyOTAxN15BMl5BanBnXkFtZTgwMDg1ODYzNTM@._V1_.jpg"
         }
     ],
-    "recomendados": [
+    "RECOMENDADAS": [
         {
             "tipo": "pelicula",
             "titulo": "Cómo Perder a un Hombre en 10 Días",

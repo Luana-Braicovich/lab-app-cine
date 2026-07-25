@@ -15,14 +15,13 @@ const styles = StyleSheet.create({
     
   },
   text: {
-    padding: 20,
     textAlign: 'center',
     justifyContent: 'center',
     color:'white',
     fontWeight:'bold',
     fontFamily:'verdana',
     fontSize: 30,
-    paddingBottom:200,
+    paddingBottom:30,
   },
   titles: {
     padding: 20,
@@ -33,12 +32,15 @@ const styles = StyleSheet.create({
     fontSize: 30
   },
   stars: {
-    textAlign: 'center',
-    justifyContent: 'center',
-    color:'white',
     fontWeight:'bold',
     fontFamily:'georgia',
     fontSize: 60
+  },
+  starsbar: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    textAlign:'center',
   },
   background:{
     flex: 1,
@@ -53,8 +55,20 @@ const styles = StyleSheet.create({
   },
   margenes:{
     paddingTop:200,
-    paddingBottom:200,
+    paddingBottom:50,
   },
+  boton: {
+    color:"white",
+    backgroundColor:"#F26680",
+    textAlign: 'center',
+    margin:50,
+    marginBottom:100,
+    fontWeight:'bold',
+    fontFamily:'verdana',
+    fontSize: 40,
+    borderRadius:10,
+    boxShadow: '0px 4px 6px -1px rgba(0, 0, 0, 0.5)'
+  }
 });
 
 export default styles;
