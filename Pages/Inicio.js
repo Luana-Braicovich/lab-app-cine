@@ -34,8 +34,8 @@ export default function Inicio() {
       
       <Link screen="Home" style={styles.boton}>Comienza</Link>
 
-      <Carrousel tipo='POPULARES' />
-      <Carrousel tipo='PROXIMAMENTE' />
+      <Carrousel tipo='pelicula' genero='POPULARES' />
+      <Carrousel tipo='pelicula' genero='PROXIMAMENTE' />
 
       </View>    
 

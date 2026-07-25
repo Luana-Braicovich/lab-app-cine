@@ -1,15 +1,17 @@
 import {Text,  TouchableOpacity, ScrollView, Image, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from '../Styles/stylesGeneral'
-import movies from '../api/movies.json';
+import obtenerElementoApi from '../Funciones/obtenerElementosApi';
 
-export default function Carrousel ({tipo}) {
-  return (
+
+export default function Carrousel ({tipo , genero}) {
+    const datos= obtenerElementoApi({tipo , genero});
+    return (
     <SafeAreaView>
-        <Text style={styles.titles}>{tipo}</Text>
+        <Text style={styles.titles}>{genero}</Text>
         <View style={styles.flexible}>
         <ScrollView horizontal={true} >
-        {movies[tipo].map((pelicula)=>(
+        {datos.map((pelicula)=>(
         <View key={pelicula.titulo}>
             <Image
                 source={{uri:pelicula.poster}}
@@ -20,6 +22,5 @@ export default function Carrousel ({tipo}) {
         </ScrollView>      
         </View>
     </SafeAreaView>
-  );
+    );
 };
-
