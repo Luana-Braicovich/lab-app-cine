@@ -40,11 +40,11 @@ const Estrellas = () => {
         <Text>{rating}</Text>
             {DATA.map((item)=>(
                 <Item
-                    key={item.id}
-                    item={item}
-                    onPress={()=> setRating(item.id)}
-                    textColor={item.id<=rating ?  '#F26680' : 'white'}
-                    />
+                  key={item.id}
+                  item={item}
+                  onPress={()=> setRating(item.id)}
+                  textColor={item.id<=rating ?  '#F26680' : 'white'}
+                />
                 
             ))}
     </SafeAreaView>

@@ -1,16 +1,17 @@
 import { Text, View, Image, TouchableOpacity,Pressable, Modal} from 'react-native';
 import styles from '../Styles/stylesGeneral'
-import {useState} from 'React';
+import {useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Review from '../Components/Review'
 import { Button } from '@react-navigation/elements';
+import Estrellas from './Estrellas';
+import stylesinfo from '../Styles/stylesInfo';
 
 const ListarInfo=({datos,tipo})=> {
     const detalles=datos.detalles;
     console.log({detalles})
     const reviews=datos.reviews;  
     if(tipo==='serie'){
-        console.log('sere');
         return(
             <View>
             <Principal datos={datos}/>
@@ -21,7 +22,6 @@ const ListarInfo=({datos,tipo})=> {
         )
     
     }else{
-        console.log('peli');
         return(
             
             <View>
@@ -70,6 +70,7 @@ const Principal=({datos})=>{
 }
 
 const Botones=()=>{
+    const [modalVisible, setModalVisible] = useState(false);
     return(
         <View>
             <Pressable
@@ -89,12 +90,32 @@ const Botones=()=>{
                 )}
             </Pressable>
             <Pressable
-                //onPress={()=>navigate('Info', {pelicula, tipo})}
+                onPress={()=>setModalVisible(true)}
                 style={({pressed}) => [
                     {backgroundColor: pressed ? '#F26680' : '#121b24',}
                 ]}>
                 <Text style={styles.text}>Agregar Review</Text>
             </Pressable>
+            <Modal
+                visible={modalVisible}
+                transparent={true}
+                onRequestClose={()=>setModalVisible(false)}
+                animationType='slide'
+                //presentationStyle='pageSheet'
+            >
+                <View style={stylesinfo.centrado}>
+                    <View style={stylesinfo.modal}>
+                        <Text style={styles.text}>Agregar Review</Text>
+                        <Pressable
+                        style={({pressed}) => [
+                        {backgroundColor: pressed ? '#F26680' : '#d1d1d1',}
+                        ]}  
+                        onPress={() => setModalVisible(false)}>
+                        <Text style={styles.text}>Guardaar</Text>
+                        </Pressable>
+                    </View>
+                </View>
+            </Modal>
         </View>
     )  
 }

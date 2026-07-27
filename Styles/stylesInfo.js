@@ -16,6 +16,27 @@ const stylesinfo = StyleSheet.create({
     icono:{
         width:30,
         height:30,
+    },
+    centrado:{
+        flex: 1,
+        backgroundColor: '#4c565f',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    modal:{
+        margin: 20,
+        backgroundColor: '#4c565f',
+        borderRadius: 20,
+        padding: 35,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5,
     }
 });
 

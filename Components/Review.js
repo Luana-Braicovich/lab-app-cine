@@ -8,8 +8,8 @@ const Review=({review})=> {
 
     return(
         <View style={stylesinfo.review}>
-            {review.map((item)=>(
-            <View> 
+            {review.map((item,index)=>(
+            <View key={index}> 
                 <View style={stylesinfo.header}> 
                 <Image source={icono}
                 style={stylesinfo.icono}/>
