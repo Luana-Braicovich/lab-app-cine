@@ -6,17 +6,17 @@ import Review from '../Components/Review'
 import { Button } from '@react-navigation/elements';
 import Estrellas from './Estrellas';
 import stylesinfo from '../Styles/stylesInfo';
+import Popup from './Popup';
 
 const ListarInfo=({datos,tipo})=> {
     const detalles=datos.detalles;
-    console.log({detalles})
     const reviews=datos.reviews;  
     if(tipo==='serie'){
         return(
             <View>
             <Principal datos={datos}/>
             <DetallesSerie detalles={detalles}/>
-            <Botones/>
+            <Botones titulo={datos.titulo} tipo={tipo}/>
             <Review review= {reviews}/>
             </View>
         )
@@ -27,7 +27,7 @@ const ListarInfo=({datos,tipo})=> {
             <View>
             <Principal datos={datos}/>
             <DetallesPelicula detalles={detalles}/>
-            <Botones/>
+            <Botones titulo={datos.titulo} tipo={tipo}/>
             <Review review= {reviews}/>
             </View>
         )
@@ -69,7 +69,7 @@ const Principal=({datos})=>{
     );
 }
 
-const Botones=()=>{
+const Botones=({titulo, tipo})=>{
     const [modalVisible, setModalVisible] = useState(false);
     return(
         <View>
@@ -89,33 +89,7 @@ const Botones=()=>{
                     <Text style={styles.text}>Agregar a Watchlist</Text>
                 )}
             </Pressable>
-            <Pressable
-                onPress={()=>setModalVisible(true)}
-                style={({pressed}) => [
-                    {backgroundColor: pressed ? '#F26680' : '#121b24',}
-                ]}>
-                <Text style={styles.text}>Agregar Review</Text>
-            </Pressable>
-            <Modal
-                visible={modalVisible}
-                transparent={true}
-                onRequestClose={()=>setModalVisible(false)}
-                animationType='slide'
-                //presentationStyle='pageSheet'
-            >
-                <View style={stylesinfo.centrado}>
-                    <View style={stylesinfo.modal}>
-                        <Text style={styles.text}>Agregar Review</Text>
-                        <Pressable
-                        style={({pressed}) => [
-                        {backgroundColor: pressed ? '#F26680' : '#d1d1d1',}
-                        ]}  
-                        onPress={() => setModalVisible(false)}>
-                        <Text style={styles.text}>Guardaar</Text>
-                        </Pressable>
-                    </View>
-                </View>
-            </Modal>
+            <Popup titulo={titulo} tipo={tipo}/>
         </View>
     )  
 }
@@ -130,7 +104,6 @@ const DetallesSerie=({detalles})=>{
 }
 
 const DetallesPelicula=({detalles})=>{
-    console.log({detalles})
     return(
         <View>
             <Text style={styles.text}>{detalles.duracion}</Text>

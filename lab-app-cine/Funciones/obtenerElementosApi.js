@@ -1,3 +1,5 @@
+//SE PUEDE SACAR, LO REMPLACE CON OBTENERELEMENTOS
+
 import movies from '../api/movies.json';
 import series from '../api/series.json';
 

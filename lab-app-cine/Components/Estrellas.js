@@ -26,7 +26,7 @@ const DATA = [
   },
 ];
 
-const Item = ({item, onPress, textColor}) => (
+export const Item = ({item, onPress, textColor}) => (
   <TouchableOpacity onPress={onPress} style={[styles.stars]}>
     <Text style={[styles.stars, {color: textColor}]}>{item.title}</Text>
   </TouchableOpacity>
@@ -37,7 +37,6 @@ const Estrellas = () => {
 
   return (
     <SafeAreaView style={styles.starsbar}>
-        <Text>{rating}</Text>
             {DATA.map((item)=>(
                 <Item
                   key={item.id}

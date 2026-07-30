@@ -10,10 +10,10 @@ export default function Home() {
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
       <ScrollView>
-      <Carrousel tipo='pelicula' genero='TERROR' />
-      <Carrousel tipo='pelicula' genero='ANIMACION' />
-      <Carrousel tipo='pelicula' genero='RECOMENDADAS' />
-      <Carrousel tipo='serie' genero='SERIES POPULARES' />
+      <Carrousel origen='Home' tipo='pelicula' genero='TERROR' />
+      <Carrousel origen='Home' tipo='pelicula' genero='ANIMACION' />
+      <Carrousel origen='Home' tipo='pelicula' genero='RECOMENDADAS' />
+      <Carrousel origen='Home' tipo='serie' genero='SERIES POPULARES' />
       </ScrollView>
       
     </SafeAreaView>

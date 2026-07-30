@@ -1,27 +1,30 @@
-
-async function almacenarElementoApi({elemento, tipo}) {
-    const { usuario, comentario, calificacion, fecha, titulo, tipo } = elemento;
-    const newReview = {
-        usuario: usuario,
-        fecha: fecha,
-        comentario: comentario,
-        calificacion: calificacion
+export async function almacenarElementoApi(titulo,tipo,rankingActual,comentario) {
+        console.log(
+                "usuario: ","default",
+                "comentario:", comentario,
+                "calificacion:", rankingActual,
+                "titulo:", titulo,
+                "tipo:", tipo
+        )
+        /*const fecha = new Date();
+        const diaActual = fecha.getDate();
+        const mesActual = fecha.getMonth() + 1;
+        const añoActual = fecha.getFullYear();
+        if (input.value == "") { return }
+        fetch('http://192.168.0.237:3030/reviews',
+            {
+                method: 'POST',
+                headers: {
+                    "Content-Type": 'application/json'
+                },
+                body: JSON.stringify({
+                    usuario: "default",
+                    comentario: comentario,
+                    calificacion: rankingActual,
+                    fecha: `${diaActual}/${mesActual}/${añoActual}`,
+                    titulo: titulo,
+                    tipo: tipo
+                })
+            }
+        ).then(console.log("exito"));*/
     }
-    console.log(newReview);
-    let indice = 0;
-    if (tipo == "pelicula") {
-        indice = data.peliculas.findIndex(pelicula => pelicula.titulo == titulo)
-        if (indice >= 0) {
-            data.peliculas[indice].reviews.push(newReview);
-            res.send(data.peliculas[indice])
-        }
-    } else {
-        indice = data.series.findIndex(series => series.titulo == titulo);
-        if (indice >= 0) {
-            data.series[indice].reviews.push(newReview);
-            res.send(data.series[indice])
-        }
-    }
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
-
-}

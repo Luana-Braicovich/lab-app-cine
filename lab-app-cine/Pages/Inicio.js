@@ -6,7 +6,7 @@ import background from '../assets/gradiente.jpg';
 import styles from '../Styles/stylesGeneral'
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Estrellas from '../Components/Estrellas';
-import CarrouselInicio from '../Components/CarrouselInicio';
+import Carrousel from '../Components/Carrousel';
 
 export default function Inicio() {
   return (
@@ -26,8 +26,8 @@ export default function Inicio() {
       
       <Link screen="Home" style={styles.boton}>Comienza</Link>
 
-      <CarrouselInicio tipo='pelicula' genero='POPULARES' />
-      <CarrouselInicio tipo='pelicula' genero='PROXIMAMENTE' />
+      <Carrousel origen='inicio' tipo='pelicula' genero='POPULARES' />
+      <Carrousel origen='inicio' tipo='pelicula' genero='PROXIMAMENTE' />
 
       </View>    
 

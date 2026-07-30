@@ -19,7 +19,6 @@ const stylesinfo = StyleSheet.create({
     },
     centrado:{
         flex: 1,
-        backgroundColor: '#4c565f',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -37,6 +36,13 @@ const stylesinfo = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 4,
         elevation: 5,
+    },
+    input: {
+        height: 400,
+        width:300,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
     }
 });
 

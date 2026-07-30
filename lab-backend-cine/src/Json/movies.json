@@ -1,0 +1,378 @@
+{
+    "POPULARES": [
+        {
+            "tipo": "pelicula",
+            "titulo": "Inception",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Godfather",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-1000-0-1500-crop.jpg?v=bca8b67402"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Dark Knight",
+            "poster": "https://m.media-amazon.com/images/S/pv-target-images/e9a43e647b2ca70e75a3c0af046c4dfdcd712380889779cbdc2c57d94ab63902.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Pulp Fiction",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/4/4/4/51444-pulp-fiction-0-460-0-690-crop.jpg?v=dee19a8077 2x"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Shawshank Redemption",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Matrix",
+            "poster": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Forrest Gump",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/2/7/0/4/2704-forrest-gump-0-230-0-345-crop.jpg?v=173bc04cf0"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Gladiator",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/9/5/2/51952-gladiator-2000-0-460-0-690-crop.jpg?v=0071a74571 2x"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Avatar",
+            "poster": "https://m.media-amazon.com/images/S/pv-target-images/ae4816cade1a5b7f29787d0b89610132c72c7747041481c6619b9cc3302c0101.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Spirited Away",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Jurassic Park",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_.jpg"
+        }
+    ],
+    "PROXIMAMENTE": [
+        {
+            "titulo": "El gato con sombrero",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZmJhNzk4OGMtOTlmNC00ODAxLWFkYjYtY2RhYWVmNDg5YmViXkEyXkFqcGc@._V1_FMjpg_UY474_.jpg"
+        },
+        {
+            "titulo": "Street Fighter",
+            "poster": "https://m.media-amazon.com/images/M/MV5BYjhlN2EyNGUtY2U4YS00ZTQ3LTg0NTgtNGIxZmVhMDlmMjIyXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "titulo": "Volcan: Fuego Bajo Tierra",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNDllNDNkNWItNjkxNS00NWU1LTgwYmUtYTU3ZjM1YWM3YWQwXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "titulo": "Emily, ¿Donde Estas?",
+            "poster": "https://m.media-amazon.com/images/M/MV5BN2MzZDk2Y2ItYzNiZS00Y2Y3LTg2NzYtMmI3NmI4NGFhYzBmXkEyXkFqcGc@._V1_FMjpg_UY474_.jpg"
+        },
+        {
+            "titulo": "Slow Horses",
+            "poster": "https://pics.filmaffinity.com/slow_horses-876530408-large.jpg"
+        },
+        {
+            "titulo": "El señor de los anillos",
+            "poster": "https://pics.filmaffinity.com/lord_of_the_rings_the_rings_of_power-159886546-large.jpg"
+        },
+        {
+            "titulo": "Carrie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNDVkYzcyMTctMWE5YS00M2I2LWFmYzktZTI1OWIyMGYyNDkyXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "titulo": "Clayface",
+            "poster": "https://m.media-amazon.com/images/M/MV5BYTAyMjgxZjctMjRjNC00Zjg1LWJiNzctMDkxYzk0NWVmODMwXkEyXkFqcGc@._V1_.jpg"
+        }
+    ],
+    "TERROR": [
+        {
+            "tipo": "pelicula",
+            "titulo": "Talk to Me",
+            "poster": "https://m.media-amazon.com/images/M/MV5BY2I2NzJmY2YtYTM3Ni00ZGJhLThkZTItODFhMzhlZjZkMDQ5XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Boogeyman",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/4/6/1/8/0/8/461808-the-boogeyman-0-230-0-345-crop.jpg?v=3da169a386"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Evil Dead Rise",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjM1ZmViMmYtOGYzZC00YzhmLWE0MTMtMzNjYzcyNjEwYWRkXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Nun II",
+            "poster": "https://m.media-amazon.com/images/M/MV5BY2YxYmEyYmUtOWRkMi00NDU3LTk0NGMtOTA5MzliMDg3NDQ0XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Pearl",
+            "poster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbgqRastFgpQeIlYqElTkXlTkrGrZg_7wF4Jze7EoC74xlyrV9dWkum_Fsw3ZVfMcRJmT6Ed7xB_3ww-WcCW1IztB9J79xT3rDrXVU4FBElHbDGnXyu7KGLEHCfTz3nHSO0tUqX5UeQPvUb3BahHoWp5rM84Qzvqu82TSPuMl9rN-UuwNvlfbqAAdfQ2M/s1082/Pearl.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Hereditary",
+            "poster": "https://pics.filmaffinity.com/Hereditary-411242403-large.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "El Exorcista",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZjg3YjE4ZjAtYTdmYS00ZTBkLWE1ZjgtNzAzODUwNzRiYjlmXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "It",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZGZmOTZjNzUtOTE4OS00OGM3LWJiNGEtZjk4Yzg2M2Q1YzYxXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Midsommar",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_FMjpg_UX1000_.jpg",
+            "reviews": [
+                {
+                    "usuario": "cult_watcher",
+                    "contenido": "Una película inquietante con una atmósfera sofocante.",
+                    "calificacion": 4.7
+                },
+                {
+                    "usuario": "bright_horror_fan",
+                    "contenido": "Visualmente hermosa pero profundamente perturbadora.",
+                    "calificacion": 4
+                }
+            ]
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "El Resplandor",
+            "poster": "https://a.ltrbxd.com/resized/sm/upload/7s/m2/bw/d0/caoYMcjUamGoBVy65i1AHJBvdzw-0-1000-0-1500-crop.jpg?v=88d9d6cce4"
+        }
+    ],
+    "ACCION": [
+        {
+            "tipo": "pelicula",
+            "titulo": "John Wick: Chapter 4",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/5/3/0/8/8/2/530882-john-wick-chapter-4-0-1000-0-1500-crop.jpg?v=bc32219057"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Fast & Furious X",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/3/2/0/4/8/1/320481-fast-x-0-1000-0-1500-crop.jpg?v=58239dde0a"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Guardians of the Galaxy Vol. 3",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/3/7/9/7/1/1/379711-guardians-of-the-galaxy-volume-3-0-1000-0-1500-crop.jpg?v=bd023e472c"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Mission: Impossible - Dead Reckoning Part One",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/5/0/3/4/0/2/503402-mission-impossible-dead-reckoning-part-one-0-1000-0-1500-crop.jpg?v=34b8b35ec9"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Matrix",
+            "poster": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Rocky",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/0/9/0/51090-rocky-0-1000-0-1500-crop.jpg?v=da48c9eb5a"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Mad Max 2",
+            "poster": "https://a.ltrbxd.com/resized/film-poster/4/7/5/9/9/47599-mad-max-2-the-road-warrior-0-1000-0-1500-crop.jpg?v=59f8b765f3"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Terminator",
+            "poster": "https://a.ltrbxd.com/resized/sm/upload/g2/2g/f0/6b/the-terminator-original-0-1000-0-1500-crop.jpg?v=677a47d94a"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Aliens",
+            "poster": "https://a.ltrbxd.com/resized/sm/upload/8v/f1/qw/aa/bg7K6VtUG7Ew70gQj6SSroD5d4R-0-1000-0-1500-crop.jpg?v=a932f9e98e"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Deadpool",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        }
+    ],
+    "ANIMACION": [
+        {
+            "tipo": "pelicula",
+            "titulo": "Robot Dreams",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTE0OGRjZWQtMDRiOS00ZjM4LTg2NjAtZGYyZDk1NGRkMzg1XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Bee Movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1NjE0NzM1NF5BMl5BanBnXkFtZTcwMTM4MTE2MQ@@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Spider-Man: Into the Spider-Verse",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_FMjpg_UX1000_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Fantastic Mr. Fox",
+            "poster": "https://m.media-amazon.com/images/S/pv-target-images/b54c6f334c8a1b0d8aa5fff693a14b4eb3bdc7cc83d5f16cccd56761d388c75e.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Grandes Héroes",
+            "poster": "https://m.media-amazon.com/images/M/MV5BYjQ3YzUyOGQtNjdlYS00YmRhLWIyOWYtMGQ3YjkwMjJiYzRjXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Leo",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNGMyMjQ0Y2MtMzhkZS00NGU5LThmMmYtZDE0MWIwOTY2MjlhXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "El Castillo Ambulante",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTZhNTc2M2YtOGFhMS00MmQ2LTkxNWUtYWNhNWYyN2E2YzY1XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Metegol",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTEzMjY1OTM5NjVeQTJeQWpwZ15BbWU3MDcyMjU2NTk@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Cómo Entrenar a tu Dragón",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_FMjpg_UX1000_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "El Niño y la Garza",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMzA5Zjg3MTAtM2FhZS00NTNjLTg3NjEtNWQ4MTRhZjhiNzVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        }
+    ],
+    "ROMANCE": [
+        {
+            "tipo": "pelicula",
+            "titulo": "Yo Antes de Ti",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_FMjpg_UX1000_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Cómo Perder a un Hombre en 10 Días",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjE4NTA1NzExN15BMl5BanBnXkFtZTYwNjc3MjM3._V1_QL75_UY281_CR0,0,190,281_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Mujer Bonita",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNmNlZjAxMzEtNzNlYy00ZWY4LTkwN2QtYTljZjgzZjQ2ZDU5XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "About Time",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTA1ODUzMDA3NzFeQTJeQWpwZ15BbWU3MDgxMTYxNTk@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "10 Things I Hate About You",
+            "poster": "https://m.media-amazon.com/images/M/MV5BOTQwYmRhNGQtODI2Mi00ZTRlLTk0Y2QtY2NkNjE1MGNhNTgwXkEyXkFqcGc@._V1_QL75_UX190_CR0,1,190,281_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "The Notebook",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZjE0ZjgzMzYtMTAxYi00NGMzLThmZDktNzFlMzA2MWRmYWQ0XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Notting Hill",
+            "poster": "https://pics.filmaffinity.com/Notting_Hill-686655867-large.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Orgullo y Prejuicio",
+            "poster": "https://pics.filmaffinity.com/Orgullo_y_prejuicio-197724218-large.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Con Todos Menos Contigo",
+            "poster": "https://m.media-amazon.com/images/M/MV5BOGIyZTgxMWEtOWNkMS00NDgzLWE0Y2UtNWRjOGQyOGRlZGVhXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Crazy Rich Asians",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTYxNDMyOTAxN15BMl5BanBnXkFtZTgwMDg1ODYzNTM@._V1_.jpg"
+        }
+    ],
+    "RECOMENDADAS": [
+        {
+            "tipo": "pelicula",
+            "titulo": "Cómo Perder a un Hombre en 10 Días",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjE4NTA1NzExN15BMl5BanBnXkFtZTYwNjc3MjM3._V1_FMjpg_UX1000_.jpg",
+            "alternativo": "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABY0imMUWku71yewUEahFV35E97spFPGfTP-7SEd7hhOVcp2EY1pakVK7oN_Cf6HyP14x4J4CuTz9Opx5iRcwJuRpdh-aIwpSRY-i.jpg?r=8c4"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "La La Land",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_FMjpg_UX1000_.jpg",
+            "alternativo": "https://m.media-amazon.com/images/S/pv-target-images/08d4af5a313d87716312d3cbd8ecb786ebe9347b7990abf7afbc7c437740391c.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "El Niño y la Garza",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMzA5Zjg3MTAtM2FhZS00NTNjLTg3NjEtNWQ4MTRhZjhiNzVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+            "alternativo": "https://ca-times.brightspotcdn.com/dims4/default/153f042/2147483647/strip/true/crop/3000x1623+0+0/resize/1200x649!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F85%2Fdc%2F6ac989f2464da661421c72b2355b%2Fboyandtheheron.jpg "
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Robot Dreams",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTE0OGRjZWQtMDRiOS00ZjM4LTg2NjAtZGYyZDk1NGRkMzg1XkEyXkFqcGc@._V1_.jpg",
+            "alternativo": "https://imagenes.elpais.com/resizer/v2/MVUD6XL6FFHDTNI7G66VECGCY4.jpg?auth=572fca5bdebfb68093a95bc1a10400bb322468981022708a64e97346d1b79fcf&width=1200"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Everything Everywhere All at Once",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_FMjpg_UX1000_.jpg",
+            "alternativo": "https://s.abcnews.com/images/GMA/everything-everywhere-all-at-once-ht-ml-220519_1652970985836_hpMain.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Pearl",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbgqRastFgpQeIlYqElTkXlTkrGrZg_7wF4Jze7EoC74xlyrV9dWkum_Fsw3ZVfMcRJmT6Ed7xB_3ww-WcCW1IztB9J79xT3rDrXVU4FBElHbDGnXyu7KGLEHCfTz3nHSO0tUqX5UeQPvUb3BahHoWp5rM84Qzvqu82TSPuMl9rN-UuwNvlfbqAAdfQ2M/s1082/Pearl.jpg",
+            "alternativo": "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24019554/PEARL_2.jpg?quality=90&strip=all&crop=8.8789682539683,11.207753479125,81.66335978836,64.261030674591"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Midsommar",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_FMjpg_UX1000_.jpg",
+            "alternativo": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2019/09/midsommar-pelicula-ari-aster-horror-resena-review-opinion-critica-14.jpg?resize=1280%2C720&ssl=1"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Intensamente 2",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BYWY3MDE2Y2UtOTE3Zi00MGUzLTg2MTItZjE1ZWVkMGVlODRmXkEyXkFqcGc@._V1_.jpg",
+            "alternativo": "https://editorialtelevisa.brightspotcdn.com/dims4/default/0734821/2147483647/strip/false/crop/1200x672+0+0/resize/1200x672!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F55%2Fe8%2Fa435489749de98a92e99d130a19d%2Fcomo-funciona-la-mente-de-riley-al-final-de-intensamente-2.jpg"
+        },
+        {
+            "tipo": "pelicula",
+            "titulo": "Spirited Away",
+            "sinopsis": "Una columnista decide escribir un artículo sobre cómo alejar a un hombre en 10 días, mientras su objetivo intenta hacer que se enamore de él.",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg",
+            "alternativo": "https://statcdn.fandango.com/MPX/image/NBCU_Fandango/11/123/thumb_20DEA1D8-3678-418E-8347-5D7DAFC98D83.jpg"
+        }
+    ]
+}
