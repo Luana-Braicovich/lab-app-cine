@@ -2,11 +2,10 @@ import { Text, View, Image, TouchableOpacity,Pressable, Modal} from 'react-nativ
 import styles from '../Styles/stylesGeneral'
 import {useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import Review from '../Components/Review'
 import { Button } from '@react-navigation/elements';
 import Estrellas from './Estrellas';
 import stylesinfo from '../Styles/stylesInfo';
-import Popup from './Popup';
+
 
 const ListarInfo=({datos,tipo})=> {
     const detalles=datos.detalles;
@@ -16,8 +15,7 @@ const ListarInfo=({datos,tipo})=> {
             <View>
             <Principal datos={datos}/>
             <DetallesSerie detalles={detalles}/>
-            <Botones titulo={datos.titulo} tipo={tipo}/>
-            <Review review= {reviews}/>
+            <Botones datos={datos} tipo={tipo}/>
             </View>
         )
     
@@ -27,8 +25,7 @@ const ListarInfo=({datos,tipo})=> {
             <View>
             <Principal datos={datos}/>
             <DetallesPelicula detalles={detalles}/>
-            <Botones titulo={datos.titulo} tipo={tipo}/>
-            <Review review= {reviews}/>
+            <Botones datos={datos} tipo={tipo}/>
             </View>
         )
         
@@ -51,26 +48,25 @@ const Principal=({datos})=>{
         <Calificacion reviews= {reviews}/>
         <Text style={styles.text}>{datos.titulo}</Text>
         <Text style={styles.text}>{datos.fecha_estreno}, dirigida por {datos.director}</Text>
-        <Text style={styles.text}>{generos.join(', ')},</Text>
+        <Text style={styles.text}>{generos?.join(', ')},</Text>
 
         <Text style={styles.text}>{datos.sinopsis}</Text>
 
-        {personas.map((persona)=>(
+        {personas?.map((persona)=>(
             <View key={persona}>
                 <Text style={styles.text}>{persona}</Text>
             </View>
         ))}
         
 
-        <Text style={styles.text}>Productores/As: {crews.productores}</Text>
-        <Text style={styles.text}>Guionistas: {crews.guionistas}</Text>
-        <Text style={styles.text}>Director/a de fotografia: {crews.direccion_de_fotografia}</Text>
+        <Text style={styles.text}>Productores/As: {crews?.productores}</Text>
+        <Text style={styles.text}>Guionistas: {crews?.guionistas}</Text>
+        <Text style={styles.text}>Director/a de fotografia: {crews?.direccion_de_fotografia}</Text>
     </SafeAreaView>
     );
 }
 
-const Botones=({titulo, tipo})=>{
-    const [modalVisible, setModalVisible] = useState(false);
+const Botones=({datos, tipo})=>{
     return(
         <View>
             <Pressable
@@ -89,7 +85,6 @@ const Botones=({titulo, tipo})=>{
                     <Text style={styles.text}>Agregar a Watchlist</Text>
                 )}
             </Pressable>
-            <Popup titulo={titulo} tipo={tipo}/>
         </View>
     )  
 }
@@ -97,8 +92,8 @@ const Botones=({titulo, tipo})=>{
 const DetallesSerie=({detalles})=>{
     return(
         <View>
-            <Text style={styles.text}>Temporadas: {detalles.temporadas}</Text>
-            <Text style={styles.text}>Capitulos: {detalles.capitulos}</Text>
+            <Text style={styles.text}>Temporadas: {detalles?.temporadas}</Text>
+            <Text style={styles.text}>Capitulos: {detalles?.capitulos}</Text>
         </View>
     )  
 }
@@ -106,8 +101,8 @@ const DetallesSerie=({detalles})=>{
 const DetallesPelicula=({detalles})=>{
     return(
         <View>
-            <Text style={styles.text}>{detalles.duracion}</Text>
-            <Text style={styles.text}>{detalles.clasificacion}</Text>
+            <Text style={styles.text}>{detalles?.duracion}</Text>
+            <Text style={styles.text}>{detalles?.clasificacion}</Text>
         </View>
     )  
 }
@@ -115,7 +110,7 @@ const DetallesPelicula=({detalles})=>{
 const Calificacion=({reviews})=>{
     let calificacionTotal=0;
     let cantidad=0;
-    reviews.map((item)=>{
+    reviews?.map((item)=>{
         calificacionTotal= calificacionTotal + item.calificacion;
         cantidad=cantidad+1;
     })

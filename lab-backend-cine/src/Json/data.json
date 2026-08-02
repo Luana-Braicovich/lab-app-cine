@@ -1254,6 +1254,12 @@
           "usuario": "buzz_buzz",
           "comentario": "Extraña pero entretenida, aunque no para todos.",
           "calificacion": 3
+        },
+        {
+          "usuario": "default",
+          "fecha": "2/8/2026",
+          "comentario": "No me gusto",
+          "calificacion": 1
         }
       ]
     },

@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { obtenerElementos } from '../Funciones/obtenerElementos';
 import {useEffect, useState} from 'react';
 
-export default function Carrousel ({origen, tipo , genero}) {
+function UnCarrousel ({origen, tipo , genero}) {
     const [datos, setDatos]= useState([])
     useEffect(()=>{
         const cargar = async()=>{
@@ -17,13 +17,15 @@ export default function Carrousel ({origen, tipo , genero}) {
     return(mostrarCarrousel({datos, origen, tipo, genero}));
 };
 
-function mostrarCarrousel({datos, origen,tipo, genero}){
+export default function Carrousel({datos, origen, tipo, genero}){
+    const datosGenero=datos[genero];
+    
     return (
     <SafeAreaView>
         <Text style={styles.titles}>{genero}</Text>
         <View style={styles.flexible}>
         <ScrollView horizontal={true} >
-        {datos.map((pelicula)=>(
+        {datosGenero?.map((pelicula)=>(
         <View key={pelicula.titulo}>
             <Peliculas origen={origen} pelicula={pelicula} tipo={tipo} />
         </View>

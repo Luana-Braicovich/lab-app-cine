@@ -4,7 +4,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import icono from '../assets/user-icon.png';
 
 const Review=({review})=> {
-    if(review.length>0){
+    if(review?.length>0){
 
     return(
         <View style={stylesinfo.review}>

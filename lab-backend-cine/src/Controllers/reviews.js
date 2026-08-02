@@ -1,5 +1,7 @@
 const fs = require('fs');
-const data = JSON.parse(fs.readFileSync('../Json/data.json', 'utf8'));
+const path  = require('path');
+//const data = JSON.parse(fs.readFileSync('../Json/data.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../Json/data.json'), 'utf8'));
 
 
 async function add_review(req, res) {
@@ -25,7 +27,7 @@ async function add_review(req, res) {
             res.send(data.series[indice])
         }
     }
-    fs.writeFileSync('../Json/data.json', JSON.stringify(data, null, 2), 'utf8');
+    fs.writeFileSync(path.join(__dirname, '../Json/data.json'), JSON.stringify(data, null, 2), 'utf8');
 
 }
 

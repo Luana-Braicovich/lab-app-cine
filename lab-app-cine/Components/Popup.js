@@ -7,19 +7,24 @@ import { Button } from '@react-navigation/elements';
 import stylesinfo from '../Styles/stylesInfo';
 import { Item } from './Estrellas';
 import { almacenarElementoApi } from '../Funciones/almacenarElementoApi';
+import { useNavigation } from '@react-navigation/native';
+
+
 
 const estrellas = [
-    { id: '1', title: '★'},
-    { id: '2', title: '★'},
-    { id: '3', title: '★'},
-    { id: '4', title: '★'},
-    { id: '5', title: '★'},
+    { id: 1, title: '★'},
+    { id: 2, title: '★'},
+    { id: 3, title: '★'},
+    { id: 4, title: '★'},
+    { id: 5, title: '★'},
 ];
 
-const Popup=({titulo,tipo})=>{
+const Popup=({actualizar,datos,tipo})=>{
+    const navigation = useNavigation();
     const [modalVisible, setModalVisible] = useState(false);
     const [texto, cambioTexto] = useState('');
     const [rating, setRating] = useState(0);
+    const titulo= datos.titulo;
     return(
         <View>
             <Pressable
@@ -59,13 +64,11 @@ const Popup=({titulo,tipo})=>{
                         style={({pressed}) => [
                         {backgroundColor: pressed ? '#F26680' : '#d1d1d1',}
                         ]}  
-                        onPress={() => {setModalVisible(false);cambioTexto('');setRating(0);almacenarElementoApi(titulo,tipo,rating,texto);console.log(
-                "usuario: ","default",
-                "comentario:", texto,
-                "calificacion:", rating,
-                "titulo:", titulo,
-                "tipo:", tipo
-        )}}>
+                        onPress={() => {setModalVisible(false);
+                                        cambioTexto('');
+                                        setRating(0);
+                                        almacenarElementoApi(titulo,tipo,rating,texto).then(actualizar())
+                                        }}> 
                         <Text style={styles.text}>Guardar</Text>
                         </Pressable>
                     </View>

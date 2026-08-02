@@ -7,10 +7,15 @@ import styles from '../Styles/stylesGeneral'
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Estrellas from '../Components/Estrellas';
 import Carrousel from '../Components/Carrousel';
+import { obtenerElementos } from '../Funciones/obtenerElementos';
 
 export default function Inicio() {
+  const [peliculas, setPeliculas]= useState([])
+  useEffect(()=>{
+    obtenerElementos('pelicula').then((pelicula)=>setPeliculas(pelicula))
+  },[]);
+
   return (
-    
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
       <ImageBackground 
@@ -26,8 +31,8 @@ export default function Inicio() {
       
       <Link screen="Home" style={styles.boton}>Comienza</Link>
 
-      <Carrousel origen='inicio' tipo='pelicula' genero='POPULARES' />
-      <Carrousel origen='inicio' tipo='pelicula' genero='PROXIMAMENTE' />
+      <Carrousel datos= {peliculas} origen='inicio' tipo='pelicula' genero='POPULARES' />
+      <Carrousel datos= {peliculas} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
 
       </View>    
 

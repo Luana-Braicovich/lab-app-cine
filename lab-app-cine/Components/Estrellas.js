@@ -5,23 +5,23 @@ import styles from '../Styles/stylesGeneral'
 
 const DATA = [
   {
-    id: '1',
+    id: 1,
     title: '★',
   },
   {
-    id: '2',
+    id: 2,
     title: '★',
   },
   {
-    id: '3',
+    id: 3,
     title: '★',
   },
   {
-    id: '4',
+    id: 4,
     title: '★',
   },
   {
-    id: '5',
+    id: 5,
     title: '★',
   },
 ];
