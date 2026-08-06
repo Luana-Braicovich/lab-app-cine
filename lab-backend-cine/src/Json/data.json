@@ -531,6 +531,12 @@
           "usuario": "bloodandgore",
           "comentario": "Sangrienta y divertida, perfecta para los fans del terror.",
           "calificacion": 4
+        },
+        {
+          "usuario": "default",
+          "fecha": "6/8/2026",
+          "comentario": "G",
+          "calificacion": 3
         }
       ]
     },
@@ -950,44 +956,6 @@
         {
           "usuario": "missionpossible",
           "comentario": "Tom Cruise sigue superándose en cada entrega.",
-          "calificacion": 4
-        }
-      ]
-    },
-    {
-      "titulo": "The Matrix",
-      "fecha_estreno": "1999-03-31",
-      "director": "Lana Wachowski, Lilly Wachowski",
-      "cast": [
-        "Keanu Reeves",
-        "Laurence Fishburne",
-        "Carrie-Anne Moss"
-      ],
-      "genero": [
-        "Ciencia ficción",
-        "Acción"
-      ],
-      "sinopsis": "Un hacker descubre la verdad sobre su realidad y su papel en la guerra contra sus controladores.",
-      "calificacion_general": 4,
-      "crew": {
-        "productores": "Joel Silver",
-        "guionistas": "Lana Wachowski, Lilly Wachowski",
-        "direccion_de_fotografia": "Bill Pope"
-      },
-      "detalles": {
-        "duracion": "136 minutos",
-        "clasificacion": "R"
-      },
-      "poster": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg",
-      "reviews": [
-        {
-          "usuario": "neo_lover",
-          "comentario": "Revolucionó el cine. Visualmente impresionante.",
-          "calificacion": 5
-        },
-        {
-          "usuario": "cypher_here",
-          "comentario": "Una película que me hizo cuestionar todo.",
           "calificacion": 4
         }
       ]

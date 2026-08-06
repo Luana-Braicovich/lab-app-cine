@@ -22,7 +22,7 @@ export default function Carrusel({datos, origen, tipo, genero}){
     );
 }
 
-function Peliculas ({origen, pelicula, tipo, genero}) {
+export function Peliculas ({origen, pelicula, tipo, genero}) {
     const {navigate} = useNavigation();
     const windowWidth = Dimensions.get('window').width;
         return(

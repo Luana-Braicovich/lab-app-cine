@@ -7,7 +7,9 @@ export async function obtenerInfo({nombre , tipo}){
     }else{
         categoria = json.peliculas
     }
-    const resultado= categoria.find((item)=> item.titulo===nombre)
-    return resultado
+    if(nombre!=''){
+        categoria= categoria.find((item)=> item.titulo===nombre)
+    }
+    return categoria
 }
 

@@ -9,6 +9,21 @@ const styles = StyleSheet.create({
   flexible: {
     
   },
+  tab:{
+    tabBarActiveTintColor:'#F26680',
+    tabBarStyle:{
+      backgroundColor: '#1f2f3f',
+    },
+    headerStyle: {
+      backgroundColor: '#1f2f3f',
+      },
+    headerTintColor: '#F26680',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+      fontsize: 50
+    },
+    headerTitleAlign:'center'
+  },
   header:{
     headerStyle: {
       backgroundColor: '#1f2f3f',

@@ -18,12 +18,6 @@ export default function Home() {
   return null; 
   }
 
-  /*
-  <Carrousel datos= {peliculas} origen='Home' tipo='pelicula' genero='ANIMACION' />
-        <Carrousel datos= {series} origen='Home' tipo='serie' genero='SERIES POPULARES' />  
-        <Carrousel datos= {peliculas} origen='Home' tipo='pelicula' genero='TERROR' />  
-  */
-
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
