@@ -6,7 +6,7 @@ import background from '../assets/gradiente.jpg';
 import styles from '../Styles/stylesGeneral'
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Estrellas from '../Components/Estrellas';
-import Carrousel from '../Components/Carrousel';
+import Carrusel from '../Components/Carrusel';
 import { obtenerElementos } from '../Funciones/obtenerElementos';
 
 export default function Inicio() {
@@ -14,6 +14,10 @@ export default function Inicio() {
   useEffect(()=>{
     obtenerElementos('pelicula').then((pelicula)=>setPeliculas(pelicula))
   },[]);
+
+  if(!peliculas){
+    return null;
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -31,8 +35,8 @@ export default function Inicio() {
       
       <Link screen="Home" style={styles.boton}>Comienza</Link>
 
-      <Carrousel datos= {peliculas} origen='inicio' tipo='pelicula' genero='POPULARES' />
-      <Carrousel datos= {peliculas} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
+      <Carrusel datos= {peliculas} origen='inicio' tipo='pelicula' genero='POPULARES' />
+      <Carrusel datos= {peliculas} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
 
       </View>    
 

@@ -12,19 +12,7 @@ const Stack = createNativeStackNavigator();
 export default function Pantallas(){
   return(
     <Stack.Navigator initialRouteName="Inicio"
-    screenOptions={{
-          headerStyle: {
-            backgroundColor: '#1f2f3f',
-            
-          },
-          headerTintColor: '#F26680',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-            fontsize: 50
-
-          },
-          headerTitleAlign:'center'
-    }}>
+    screenOptions={styles.header}>
       <Stack.Screen name='Inicio' component={Inicio} options={{headerShown:false}}/>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Info" component={Info}/>

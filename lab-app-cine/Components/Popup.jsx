@@ -2,11 +2,10 @@ import { Text, View,Pressable, Modal,TextInput} from 'react-native';
 import styles from '../Styles/stylesGeneral'
 import {useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import Review from '../Components/Review'
-import { Button } from '@react-navigation/elements';
+import Review from './Review'
 import stylesinfo from '../Styles/stylesInfo';
 import { Item } from './Estrellas';
-import { almacenarElementoApi } from '../Funciones/almacenarElementoApi';
+import { almacenarReview } from '../Funciones/almacenarReview';
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -67,7 +66,7 @@ const Popup=({actualizar,datos,tipo})=>{
                         onPress={() => {setModalVisible(false);
                                         cambioTexto('');
                                         setRating(0);
-                                        almacenarElementoApi(titulo,tipo,rating,texto).then(actualizar())
+                                        almacenarReview(titulo,tipo,rating,texto).then(actualizar())
                                         }}> 
                         <Text style={styles.text}>Guardar</Text>
                         </Pressable>

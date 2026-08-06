@@ -13,6 +13,11 @@ const stylesinfo = StyleSheet.create({
         paddingRight: 20,
         justifyContent: 'space-around'
     },
+    card:{
+        borderRadius:10,
+        marginRight: 5,
+        marginLeft:5
+    },
     icono:{
         width:30,
         height:30,

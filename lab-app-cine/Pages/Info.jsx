@@ -1,9 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView} from 'react-native';
 import styles from '../Styles/stylesGeneral'
-import Carrousel from '../Components/Carrousel';
+import Carrusel from '../Components/Carrusel';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import obtenerInfoApi from '../Funciones/obtenerInfoApi';
 import { useNavigation } from '@react-navigation/native';
 import { useLayoutEffect } from 'react';
 import ListarInfo from '../Components/ListarInfo'
@@ -14,7 +13,6 @@ import Popup from '../Components/Popup';
 
 
 export default function Info({route}) {
-    //POR AHORA ESTA CONFIGURADO QUE NOMAS SE ACTUALIZA LA PAGINA CUANDO CAMBIA EL VALOR DEL RATING
     const navigation = useNavigation();
     const {pelicula, tipo, newReview} = route.params;
     const [elemento, setElemento]= useState([]);
@@ -29,7 +27,7 @@ export default function Info({route}) {
         })
     })
 
-    if (elemento===[]) {
+    if (!elemento) {
         return null; 
     }
 

@@ -1,6 +1,5 @@
 import { Text, View, Image} from 'react-native';
 import stylesinfo from '../Styles/stylesInfo'
-import {SafeAreaView} from 'react-native-safe-area-context';
 import icono from '../assets/user-icon.png';
 
 const Review=({review})=> {

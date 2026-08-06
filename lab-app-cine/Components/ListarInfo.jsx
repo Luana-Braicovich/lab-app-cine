@@ -1,9 +1,6 @@
-import { Text, View, Image, TouchableOpacity,Pressable, Modal} from 'react-native';
+import { Text, View, Image,Pressable} from 'react-native';
 import styles from '../Styles/stylesGeneral'
-import {useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import { Button } from '@react-navigation/elements';
-import Estrellas from './Estrellas';
 import stylesinfo from '../Styles/stylesInfo';
 
 

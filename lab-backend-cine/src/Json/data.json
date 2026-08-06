@@ -2061,6 +2061,247 @@
           "calificacion": 5
         }
       ]
+    },
+    {
+      "titulo": "I Saw the TV Glow",
+      "fecha_estreno": "2024-05-03",
+      "director": "Jane Schoenbrun",
+      "cast": [
+        "Justice Smith",
+        "Brigette Lundy-Paine",
+        "Ian Foreman"
+      ],
+      "genero": [
+        "Drama",
+        "Terror",
+        "Fantasía"
+      ],
+      "sinopsis": "Dos adolescentes conectan a través de una misteriosa serie de televisión que comienza a desdibujar los límites entre la ficción y la realidad.",
+      "calificacion_general": 4,
+      "crew": {
+        "productores": "Emma Stone, Dave McCary, Ali Herting",
+        "guionistas": "Jane Schoenbrun",
+        "direccion_de_fotografia": "Eric Yue"
+      },
+      "detalles": {
+        "duracion": "100 minutos",
+        "clasificacion": "PG-13"
+      },
+      "poster": "https://a.ltrbxd.com/resized/film-poster/7/7/2/2/3/0/772230-i-saw-the-tv-glow-0-1000-0-1500-crop.jpg?v=73972177ff",
+      "reviews": [
+        {
+          "usuario": "dreamer99",
+          "comentario": "Hipnótica y muy diferente a cualquier otra película.",
+          "calificacion": 5
+        },
+        {
+          "usuario": "cinefilo",
+          "comentario": "Una experiencia visual y emocional muy original.",
+          "calificacion": 4
+        },
+        {
+          "usuario": "default",
+          "fecha": "6/8/2026",
+          "comentario": "Muy buena pelicula. Me gusto la colorimetria",
+          "calificacion": 4
+        }
+      ]
+    },
+    {
+      "titulo": "Marty Supreme",
+      "fecha_estreno": "2025-12-25",
+      "director": "Josh Safdie",
+      "cast": [
+        "Timothée Chalamet",
+        "Gwyneth Paltrow",
+        "Tyler, the Creator"
+      ],
+      "genero": [
+        "Drama",
+        "Comedia"
+      ],
+      "sinopsis": "La historia sigue el ascenso de un prodigio del tenis de mesa inspirado libremente en la vida de Marty Reisman.",
+      "calificacion_general": 4,
+      "crew": {
+        "productores": "Josh Safdie, Ronald Bronstein",
+        "guionistas": "Josh Safdie, Ronald Bronstein",
+        "direccion_de_fotografia": "Darius Khondji"
+      },
+      "detalles": {
+        "duracion": "140 minutos",
+        "clasificacion": "Pendiente"
+      },
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/7/4/9/9/1197499-marty-supreme-0-1000-0-1500-crop.jpg?v=b14a26bb43",
+      "reviews": [
+        {
+          "usuario": "pingpongfan",
+          "comentario": "Una biografía muy entretenida y con gran energía.",
+          "calificacion": 4
+        },
+        {
+          "usuario": "moviebuff",
+          "comentario": "Chalamet ofrece una actuación muy carismática.",
+          "calificacion": 4
+        }
+      ]
+    },
+    {
+      "titulo": "The Royal Tenenbaums",
+      "fecha_estreno": "2001-12-14",
+      "director": "Wes Anderson",
+      "cast": [
+        "Gene Hackman",
+        "Anjelica Huston",
+        "Ben Stiller"
+      ],
+      "genero": [
+        "Comedia",
+        "Drama"
+      ],
+      "sinopsis": "Una familia de antiguos niños prodigio se reúne cuando su excéntrico padre intenta reconciliarse con ellos.",
+      "calificacion_general": 5,
+      "crew": {
+        "productores": "Barry Mendel, Wes Anderson",
+        "guionistas": "Wes Anderson, Owen Wilson",
+        "direccion_de_fotografia": "Robert D. Yeoman"
+      },
+      "detalles": {
+        "duracion": "110 minutos",
+        "clasificacion": "R"
+      },
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/sf/k0/qu/5o/5xw30y0pSaMtTcuZW5VaQPiR8qb-0-1000-0-1500-crop.jpg?v=b945b566a6",
+      "reviews": [
+        {
+          "usuario": "wesfan",
+          "comentario": "Una de las mejores películas de Wes Anderson.",
+          "calificacion": 5
+        },
+        {
+          "usuario": "retrolover",
+          "comentario": "Divertida, melancólica y con un estilo único.",
+          "calificacion": 5
+        }
+      ]
+    },
+    {
+      "titulo": "Paprika",
+      "fecha_estreno": "2006-11-25",
+      "director": "Satoshi Kon",
+      "cast": [
+        "Megumi Hayashibara",
+        "Toru Furuya",
+        "Katsunosuke Hori"
+      ],
+      "genero": [
+        "Animación",
+        "Ciencia ficción",
+        "Suspenso"
+      ],
+      "sinopsis": "Una psicoterapeuta utiliza un dispositivo para entrar en los sueños de sus pacientes, pero la tecnología cae en las manos equivocadas.",
+      "calificacion_general": 5,
+      "crew": {
+        "productores": "Masao Maruyama",
+        "guionistas": "Seishi Minakami, Satoshi Kon",
+        "direccion_de_fotografia": "Michiya Katou"
+      },
+      "detalles": {
+        "duracion": "90 minutos",
+        "clasificacion": "R"
+      },
+      "poster": "https://a.ltrbxd.com/resized/film-poster/4/9/0/2/3/49023-paprika-0-1000-0-1500-crop.jpg?v=bdcabb9981",
+      "reviews": [
+        {
+          "usuario": "animefan",
+          "comentario": "Una obra maestra de la animación japonesa.",
+          "calificacion": 5
+        },
+        {
+          "usuario": "dreamwalker",
+          "comentario": "Visualmente impresionante y muy creativa.",
+          "calificacion": 5
+        }
+      ]
+    },
+    {
+      "titulo": "Mysterious Skin",
+      "fecha_estreno": "2004-09-03",
+      "director": "Gregg Araki",
+      "cast": [
+        "Joseph Gordon-Levitt",
+        "Brady Corbet",
+        "Michelle Trachtenberg"
+      ],
+      "genero": [
+        "Drama"
+      ],
+      "sinopsis": "Dos jóvenes marcados por un trauma infantil enfrentan su pasado de maneras completamente diferentes mientras buscan comprender lo ocurrido.",
+      "calificacion_general": 5,
+      "crew": {
+        "productores": "Jeff Levy-Hinte, Mary Jane Skalski",
+        "guionistas": "Gregg Araki",
+        "direccion_de_fotografia": "Steve Gainer"
+      },
+      "detalles": {
+        "duracion": "105 minutos",
+        "clasificacion": "NC-17"
+      },
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/uo/r7/1v/1j/wynnf6LT4ueuCuREPRMtHGQIk5T-0-1000-0-1500-crop.jpg?v=b0c8031954",
+      "reviews": [
+        {
+          "usuario": "indiefilm",
+          "comentario": "Una película dura pero profundamente conmovedora.",
+          "calificacion": 5
+        },
+        {
+          "usuario": "dramalover",
+          "comentario": "Actuaciones extraordinarias y una historia inolvidable.",
+          "calificacion": 5
+        }
+      ]
+    },
+    {
+      "titulo": "Carrie",
+      "fecha_estreno": "1976-11-03",
+      "director": "Brian De Palma",
+      "cast": [
+        "Sissy Spacek",
+        "Piper Laurie",
+        "Amy Irving"
+      ],
+      "genero": [
+        "Terror",
+        "Drama"
+      ],
+      "sinopsis": "Una adolescente tímida con poderes telequinéticos sufre el acoso de sus compañeros y el control de su madre hasta que una noche todo cambia.",
+      "calificacion_general": 5,
+      "crew": {
+        "productores": "Paul Monash",
+        "guionistas": "Lawrence D. Cohen",
+        "direccion_de_fotografia": "Mario Tosi"
+      },
+      "detalles": {
+        "duracion": "98 minutos",
+        "clasificacion": "R"
+      },
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/2c/5d/69/bc/uc3OvgmbnYaS5Y0BOjSmC1EmSz1-0-1000-0-1500-crop.jpg?v=52ac29973c",
+      "reviews": [
+        {
+          "usuario": "horrorfan",
+          "comentario": "Un clásico imprescindible del cine de terror.",
+          "calificacion": 5
+        },
+        {
+          "usuario": "classicmovies",
+          "comentario": "La actuación de Sissy Spacek es inolvidable.",
+          "calificacion": 5
+        },
+        {
+          "usuario": "default",
+          "fecha": "6/8/2026",
+          "comentario": "Una de las mejores peliculas de terror",
+          "calificacion": 5
+        }
+      ]
     }
   ],
   "series": [

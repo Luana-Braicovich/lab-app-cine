@@ -1,4 +1,5 @@
 import { StyleSheet} from 'react-native';
+import {Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -6,13 +7,19 @@ const styles = StyleSheet.create({
     backgroundColor:'#121b24',
   },
   flexible: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    paddingLeft:20,
-    paddingRight: 20,
-    justifyContent: 'space-around'
     
+  },
+  header:{
+    headerStyle: {
+      backgroundColor: '#1f2f3f',
+      },
+    headerTintColor: '#F26680',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+      fontsize: 50
+    },
+    headerTitleAlign:'center'
+
   },
   text: {
     textAlign: 'center',
@@ -29,7 +36,9 @@ const styles = StyleSheet.create({
     color:'white',
     fontWeight:'bold',
     fontFamily:'verdana',
-    fontSize: 30
+    fontSize: 30,
+    textShadowColor:'0px 4px 6px -1px rgba(0, 0, 0, 0.5)',
+    textShadowRadius:10
   },
   stars: {
     fontWeight:'bold',
@@ -68,6 +77,10 @@ const styles = StyleSheet.create({
     fontSize: 40,
     borderRadius:10,
     boxShadow: '0px 4px 6px -1px rgba(0, 0, 0, 0.5)'
+  },
+  escena:{
+    width:500,
+    height:260
   }
 });
 

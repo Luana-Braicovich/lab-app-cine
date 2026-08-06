@@ -1,4 +1,4 @@
-export async function almacenarElementoApi(titulo,tipo,rankingActual,comentario) {
+export async function almacenarReview(titulo,tipo,rankingActual,comentario) {
         const fecha = new Date();
         const diaActual = fecha.getDate();
         const mesActual = fecha.getMonth() + 1;
