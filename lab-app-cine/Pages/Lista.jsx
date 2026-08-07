@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View} from 'react-native';
+import { Text, View, FlatList, ActivityIndicator} from 'react-native';
 import styles from '../Styles/stylesGeneral'
 import {SafeAreaView} from 'react-native-safe-area-context';
 import { obtenerInfo } from '../Funciones/obtenerInfo';
@@ -9,10 +9,12 @@ import { Peliculas } from '../Components/Carrusel';
 
 export default function Lista({route}) {
   const { contenido } = route.params;
-  const [lista, setLista]= useState(null)
+  const [lista, setLista]= useState([])
+  const [pagina, setPaginado]=useState(0);
+
   useEffect(()=>{
-    obtenerInfo({nombre:'', tipo:contenido}).then((elem)=>setLista(elem))
-  },[]);
+    obtenerInfo({nombre:'', tipo:contenido}).then((elem)=>setLista([... lista,...elem]))
+  },[pagina]);
 
   if (!lista) {
   return null; 
@@ -22,12 +24,21 @@ export default function Lista({route}) {
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
       <Text>Lista de elem</Text>
-      {lista.map((elem)=>(
-        <View key={elem.titulo}>
-            <Peliculas origen={'Home'} pelicula={elem} tipo={contenido} genero={""} />
-        </View>
-      ))}
-      
+      <FlatList
+        data={lista}
+        renderItem={({item})=>(
+          <Peliculas origen={'Home'} pelicula={item} tipo={contenido} genero={""} /> 
+        )}
+        ListFooterComponent={loading}
+        onEndReached={()=>{setPaginado(pagina+1)}}
+        onEndReachedThreshold={0}
+      />      
     </SafeAreaView>
   );
 }
+
+const loading = () => (
+  <View>
+    <ActivityIndicator size='large' color='#F26680'/>
+  </View>
+)
