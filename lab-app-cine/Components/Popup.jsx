@@ -8,6 +8,7 @@ import { Item } from './Estrellas';
 import { almacenarReview } from '../Funciones/almacenarReview';
 import { useNavigation } from '@react-navigation/native';
 import BotonInfo from './BotonInfo';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 
 const estrellas = [
@@ -24,19 +25,12 @@ const Popup=({actualizar,datos,tipo})=>{
     const [texto, cambioTexto] = useState('');
     const [rating, setRating] = useState(0);
     const titulo= datos.titulo;
-    /*<Pressable
-                onPress={()=>setModalVisible(true)}
-                style={({pressed}) => [stylesinfo.boton,
-                    {backgroundColor: pressed ? '#F26680' : '#121b24',}
-                ]}>
-                <Text style={stylesinfo.textBoton}>Agregar Review</Text>
-            </Pressable>*/
     return(
         <View>
             <View style={stylesinfo.botones}>
-                <BotonInfo texto={'Agregar a Lista'} icon={'playlist-add'}/>
-                <BotonInfo texto={'Agregar a Watchlist'} icon={'bookmark-add'}/>
-                <BotonInfo accion={()=>setModalVisible(true)} texto={'Agregar Review'} icon={'add-comment'}/>
+                <BotonInfo texto={'Agregar a Lista'} icon={'playlist-add'} />
+                <BotonInfo texto={'Agregar a Watchlist'} icon={'bookmark-add'} />
+                <BotonInfo accion={()=>setModalVisible(true)} texto={'Agregar Review'} icon={'add-comment'} />
             </View>
             <Modal
                 visible={modalVisible}
@@ -46,7 +40,17 @@ const Popup=({actualizar,datos,tipo})=>{
             >
                 <View style={stylesinfo.centrado}>
                     <View style={stylesinfo.modal}>
-                        <Text style={stylesinfo.textModal}>Agregar Review</Text>
+                        <View style={{flexDirection:'row', alignItems:'center'}}>
+                            <Text style={stylesinfo.textModal}>    Agregar Review   </Text>
+                            <Pressable onPress={
+                                ()=>{setModalVisible(false);
+                                    cambioTexto('');
+                                    setRating(0);}
+                            } >
+                                {({pressed}) => (
+                                    <FontAwesome name="close" size={30} color={pressed ? '#F26680' : 'black'} />)}
+                            </Pressable>
+                        </View>
                         <View style={styles.starsbar}>
                                 {estrellas.map((item)=>(
                                     <Item

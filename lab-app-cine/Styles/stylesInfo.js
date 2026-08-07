@@ -35,6 +35,13 @@ const stylesinfo = StyleSheet.create({
         alignItems: 'center',
         paddingBottom: 10,
     },
+    boton2:{
+        justifyContent: 'center',
+        //borderRadius:50
+        alignSelf: 'center',
+        padding: 1,
+        
+    },
     textBoton:{
         textAlign:'center',
         //justifyContent: 'center',

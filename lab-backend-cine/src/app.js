@@ -32,7 +32,9 @@ app.listen(PORT, '0.0.0.0',() => {
 
 app.post('/reviews', (req, res) => {
     const { usuario, comentario, calificacion, fecha, titulo, tipo } = req.body;
-    if (usuario && comentario && calificacion && fecha && titulo && tipo) {
+    console.log('pongo review');
+    if (usuario && comentario && fecha && titulo && tipo) {
+      console.log('se va a guardar');
         reviews.add_review(req, res)
     } else {
         res.status(400).send("no se enviaron los datos suficientes")

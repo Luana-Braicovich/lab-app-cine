@@ -455,12 +455,6 @@
           "usuario": "horrorlover",
           "comentario": "Original y aterradora, definitivamente no es para los débiles de corazón.",
           "calificacion": 4
-        },
-        {
-          "usuario": "default",
-          "fecha": "7/8/2026",
-          "comentario": "Ajsjaj",
-          "calificacion": 4
         }
       ]
     },
@@ -537,12 +531,6 @@
           "usuario": "bloodandgore",
           "comentario": "Sangrienta y divertida, perfecta para los fans del terror.",
           "calificacion": 4
-        },
-        {
-          "usuario": "default",
-          "fecha": "6/8/2026",
-          "comentario": "G",
-          "calificacion": 3
         }
       ]
     },
@@ -1228,12 +1216,6 @@
           "usuario": "buzz_buzz",
           "comentario": "Extraña pero entretenida, aunque no para todos.",
           "calificacion": 3
-        },
-        {
-          "usuario": "default",
-          "fecha": "2/8/2026",
-          "comentario": "No me gusto",
-          "calificacion": 1
         }
       ]
     },
@@ -1500,12 +1482,6 @@
           "usuario": "toothless_fan",
           "comentario": "Visualmente espectacular y emocionalmente poderosa.",
           "calificacion": 4
-        },
-        {
-          "usuario": "default",
-          "fecha": "7/8/2026",
-          "comentario": "Hippo",
-          "calificacion": 3
         }
       ]
     },
@@ -1810,12 +1786,6 @@
           "usuario": "adventurereview",
           "comentario": "Divertida y llena de acción, pero un poco confusa.",
           "calificacion": 4
-        },
-        {
-          "usuario": "default",
-          "fecha": "7/8/2026",
-          "comentario": "Me gusto esta pelicula",
-          "calificacion": 5
         }
       ]
     },
@@ -2084,24 +2054,6 @@
           "usuario": "cinefilo",
           "comentario": "Una experiencia visual y emocional muy original.",
           "calificacion": 4
-        },
-        {
-          "usuario": "default",
-          "fecha": "6/8/2026",
-          "comentario": "Muy buena pelicula. Me gusto la colorimetria",
-          "calificacion": 4
-        },
-        {
-          "usuario": "default",
-          "fecha": "6/8/2026",
-          "comentario": "Gggggggg",
-          "calificacion": 5
-        },
-        {
-          "usuario": "default",
-          "fecha": "7/8/2026",
-          "comentario": "Omg",
-          "calificacion": 2
         }
       ]
     },
@@ -2292,12 +2244,6 @@
           "usuario": "classicmovies",
           "comentario": "La actuación de Sissy Spacek es inolvidable.",
           "calificacion": 5
-        },
-        {
-          "usuario": "default",
-          "fecha": "6/8/2026",
-          "comentario": "Una de las mejores peliculas de terror",
-          "calificacion": 5
         }
       ]
     }
@@ -2397,12 +2343,6 @@
           "usuario": "suspenso_lover",
           "comentario": "Cada temporada mejora más que la anterior.",
           "calificacion": 4
-        },
-        {
-          "usuario": "default",
-          "fecha": "7/8/2026",
-          "comentario": "Me gusto menos la ultima temporada",
-          "calificacion": 3
         }
       ]
     },
@@ -2450,18 +2390,6 @@
           "usuario": "quimico_ron",
           "comentario": "Cada episodio es una lección de narrativa.",
           "calificacion": 5
-        },
-        {
-          "usuario": "default",
-          "fecha": "7/8/2026",
-          "comentario": "Me gusto el final de temporada",
-          "calificacion": 5
-        },
-        {
-          "usuario": "default",
-          "fecha": "7/8/2026",
-          "comentario": "No me gusto",
-          "calificacion": 1
         }
       ]
     },

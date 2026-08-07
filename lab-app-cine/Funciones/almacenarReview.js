@@ -1,9 +1,11 @@
 export async function almacenarReview(titulo,tipo,rankingActual,comentario) {
+        console.log(titulo, rankingActual, comentario);    
         const fecha = new Date();
         const diaActual = fecha.getDate();
         const mesActual = fecha.getMonth() + 1;
         const añoActual = fecha.getFullYear();
         if (comentario == "") { return }
+        console.log(titulo, rankingActual, comentario);  
         console.log('almacenarElementoApi')
         fetch('http://192.168.0.236:3030/reviews',
             {

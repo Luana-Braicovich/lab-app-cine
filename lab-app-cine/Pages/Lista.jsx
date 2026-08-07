@@ -21,7 +21,7 @@ export default function Lista({route}) {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar style="light" />
       <View>
         <FlatList
@@ -37,7 +37,7 @@ export default function Lista({route}) {
           onEndReachedThreshold={0}
       />      
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 

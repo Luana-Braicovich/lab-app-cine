@@ -6,6 +6,7 @@ import Inicio from '../Pages/Inicio'
 import Info from '../Pages/Info'
 import Lista from '../Pages/Lista'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { Image } from 'react-native';
 
 
 
@@ -15,7 +16,14 @@ const Tab = createBottomTabNavigator();
 function HomeTabs(){
   return(
     <Tab.Navigator screenOptions={styles.tab}>
-      <Tab.Screen name="Home" component={Home} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="home-filled" size={size} color={color} />)}}/>
+      <Tab.Screen name="Home" component={Home} options={{
+        headerTitle: () => (
+          <Image
+              source={require('../assets/logo1.png')}
+              style={styles.logo}
+          />
+          ),
+        tabBarIcon:({color,size})=>(<MaterialIcons name="home-filled" size={size} color={color} />)}}/>
       <Tab.Screen name="Peliculas" component={Lista} initialParams={{contenido:"pelicula"}} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="movie" size={size} color={color} />)}}/>
       <Tab.Screen name="Series" component={Lista} initialParams={{contenido:"serie"}} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="tv" size={size} color={color} />)}}/>
     </Tab.Navigator>

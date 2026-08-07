@@ -2,6 +2,10 @@ import { StyleSheet} from 'react-native';
 import {Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
+  logo:{
+    width:50,
+    height:50,
+  },
   container: {
     flex: 1,
     backgroundColor:'#121b24',
@@ -21,7 +25,7 @@ const styles = StyleSheet.create({
     headerTintColor: '#F26680',
     headerTitleStyle: {
       fontWeight: 'bold',
-      fontsize: 50
+      fontsize: 50,
     },
     headerTitleAlign:'center'
   },
