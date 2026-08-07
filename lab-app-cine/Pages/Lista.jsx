@@ -23,16 +23,20 @@ export default function Lista({route}) {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
-      <Text>Lista de elem</Text>
-      <FlatList
-        data={lista}
-        renderItem={({item})=>(
-          <Peliculas origen={'Home'} pelicula={item} tipo={contenido} genero={""} /> 
-        )}
-        ListFooterComponent={loading}
-        onEndReached={()=>{setPaginado(pagina+1)}}
-        onEndReachedThreshold={0}
+      <View>
+        <FlatList
+          data={lista}
+          numColumns={2}
+          renderItem={({item})=>(
+            <View style={styles.lista}>
+              <Peliculas origen={'Home'} pelicula={item} tipo={contenido} genero={""} /> 
+            </View>
+          )}
+          ListFooterComponent={loading}
+          onEndReached={()=>{setPaginado(pagina+1)}}
+          onEndReachedThreshold={0}
       />      
+      </View>
     </SafeAreaView>
   );
 }

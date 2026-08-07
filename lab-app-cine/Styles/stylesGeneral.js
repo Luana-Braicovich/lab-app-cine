@@ -6,8 +6,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor:'#121b24',
   },
-  flexible: {
-    
+  lista: {
+    marginBottom:10,
+    alignSelf:'center',
   },
   tab:{
     tabBarActiveTintColor:'#F26680',
@@ -61,10 +62,10 @@ const styles = StyleSheet.create({
     fontSize: 60
   },
   starsbar: {
-    flex: 1,
+    //flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
-    textAlign:'center',
+    //textAlign:'center',
   },
   background:{
     flex: 1,

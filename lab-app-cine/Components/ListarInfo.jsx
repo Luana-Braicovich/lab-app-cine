@@ -2,104 +2,74 @@ import { Text, View, Image,Pressable} from 'react-native';
 import styles from '../Styles/stylesGeneral'
 import {SafeAreaView} from 'react-native-safe-area-context';
 import stylesinfo from '../Styles/stylesInfo';
+import {Dimensions} from 'react-native';
+
 
 
 const ListarInfo=({datos,tipo})=> {
     const detalles=datos.detalles;
-    const reviews=datos.reviews;  
-    if(tipo==='serie'){
-        return(
-            <View>
-            <Principal datos={datos}/>
-            <DetallesSerie detalles={detalles}/>
-            <Botones datos={datos} tipo={tipo}/>
-            </View>
-        )
-    
-    }else{
-        return(
-            
-            <View>
-            <Principal datos={datos}/>
-            <DetallesPelicula detalles={detalles}/>
-            <Botones datos={datos} tipo={tipo}/>
-            </View>
-        )
-        
-    }
-    
-}
-
-const Principal=({datos})=>{
     const personas=datos.cast;
     const crews=datos.crew;  
     const generos=datos.genero;
     const reviews=datos.reviews;  
+    const windowWidth = (Dimensions.get('window').width)/2;
     
     return (
-    <SafeAreaView>
-        <Image
-            source={{uri:datos.poster}}
-            style={styles.card}
-        /> 
-        <Calificacion reviews= {reviews}/>
-        <Text style={styles.text}>{datos.titulo}</Text>
-        <Text style={styles.text}>{datos.fecha_estreno}, dirigida por {datos.director}</Text>
-        <Text style={styles.text}>{generos?.join(', ')},</Text>
-
-        <Text style={styles.text}>{datos.sinopsis}</Text>
-
-        {personas?.map((persona)=>(
-            <View key={persona}>
-                <Text style={styles.text}>{persona}</Text>
+    <View style={[stylesinfo.info]}>
+        <View style={stylesinfo.principal}>
+            <View>
+                <Image
+                    source={{uri:datos.poster}}
+                    style={stylesinfo.card}
+                /> 
+                <Calificacion reviews= {reviews}/>
             </View>
-        ))}
-        
+            <View style={{width:windowWidth}}>
+                <Text style={[stylesinfo.titles, {fontSize:30}]}>{datos.titulo}</Text>
+                <Text style={stylesinfo.text}>
+                    {datos.fecha_estreno}
+                    {tipo==='pelicula'?', dirigida por ':', creada por '}
+                </Text>
+                <Text style={stylesinfo.titles}>{tipo==='pelicula'?datos.director:datos.creador}</Text>
+            </View>
+        </View>
 
-        <Text style={styles.text}>Productores/As: {crews?.productores}</Text>
-        <Text style={styles.text}>Guionistas: {crews?.guionistas}</Text>
-        <Text style={styles.text}>Director/a de fotografia: {crews?.direccion_de_fotografia}</Text>
-    </SafeAreaView>
+        <View style={stylesinfo.box}>
+            <Text style={stylesinfo.titles}>Sinopsis:</Text>
+            <Text style={stylesinfo.text}>{datos.sinopsis}</Text>
+
+            <Text style={stylesinfo.titles}>Generos:</Text>
+            <Text style={stylesinfo.text}>{generos?.join(', ')}</Text>
+
+            <Text style={stylesinfo.titles}>Cast:</Text>
+            {personas?.map((persona)=>(
+                <View key={persona}>
+                    <Text style={stylesinfo.text}>          {persona}</Text>
+                </View>
+            ))}
+            
+            <Text style={stylesinfo.titles}>Crew:</Text>
+            <Text style={stylesinfo.text}>          Productores/As: {crews?.productores}</Text>
+            <Text style={stylesinfo.text}>          Guionistas: {crews?.guionistas}</Text>
+            <Text style={stylesinfo.text}>          Director/a de fotografia: {crews?.direccion_de_fotografia}</Text>
+
+            <Text style={stylesinfo.titles}>Detalles:</Text>
+            <Detalles detalles={detalles} tipo={tipo}/>
+        </View>
+    </View>
     );
 }
 
-const Botones=({datos, tipo})=>{
+const Detalles=({detalles, tipo})=>{
     return(
         <View>
-            <Pressable
-                style={({pressed}) => [
-                    {backgroundColor: pressed ? '#F26680' : '#121b24',}
-                ]}>
-                {({pressed}) => (
-                    <Text style={styles.text}>Agregar a lista</Text>
-                )}
-            </Pressable>
-            <Pressable
-                style={({pressed}) => [
-                    {backgroundColor: pressed ? '#F26680' : '#121b24',}
-                ]}>
-                {({pressed}) => (
-                    <Text style={styles.text}>Agregar a Watchlist</Text>
-                )}
-            </Pressable>
-        </View>
-    )  
-}
-
-const DetallesSerie=({detalles})=>{
-    return(
-        <View>
-            <Text style={styles.text}>Temporadas: {detalles?.temporadas}</Text>
-            <Text style={styles.text}>Capitulos: {detalles?.capitulos}</Text>
-        </View>
-    )  
-}
-
-const DetallesPelicula=({detalles})=>{
-    return(
-        <View>
-            <Text style={styles.text}>{detalles?.duracion}</Text>
-            <Text style={styles.text}>{detalles?.clasificacion}</Text>
+            <Text style={stylesinfo.text}>          Duracion: {detalles?.duracion}</Text>
+            <Text style={stylesinfo.text}>          Clasificacion: {detalles?.clasificacion}</Text>
+            {tipo==='serie' && 
+            (<View> 
+            <Text style={stylesinfo.text}>          Temporadas: {detalles?.temporadas}</Text>
+            <Text style={stylesinfo.text}>          Capitulos: {detalles?.capitulos}</Text>
+            </View>)}
         </View>
     )  
 }
@@ -116,7 +86,7 @@ const Calificacion=({reviews})=>{
 
     return(
         <View>
-            <Text style={styles.text}>Calificacion: {promedio} ★</Text> 
+            <Text style={stylesinfo.titles}>Calificacion: {promedio} ★</Text> 
         </View>
     )  
 }

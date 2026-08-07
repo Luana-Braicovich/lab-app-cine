@@ -15,7 +15,7 @@ const Tab = createBottomTabNavigator();
 function HomeTabs(){
   return(
     <Tab.Navigator screenOptions={styles.tab}>
-      <Tab.Screen name="CineFai" component={Home} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="home-filled" size={size} color={color} />)}}/>
+      <Tab.Screen name="Home" component={Home} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="home-filled" size={size} color={color} />)}}/>
       <Tab.Screen name="Peliculas" component={Lista} initialParams={{contenido:"pelicula"}} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="movie" size={size} color={color} />)}}/>
       <Tab.Screen name="Series" component={Lista} initialParams={{contenido:"serie"}} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="tv" size={size} color={color} />)}}/>
     </Tab.Navigator>
@@ -27,7 +27,7 @@ export default function Pantallas(){
   return(
     <Stack.Navigator initialRouteName="Inicio" screenOptions={styles.header} >
       <Stack.Screen name='Inicio' component={Inicio} options={{headerShown:false}}/>
-      <Stack.Screen name="Home" component={HomeTabs} options={{headerShown:false}}/>
+      <Stack.Screen name="HomeTabs" component={HomeTabs} options={{headerShown:false}}/>
       <Stack.Screen name="Info" component={Info}/>
     </Stack.Navigator>  
   );

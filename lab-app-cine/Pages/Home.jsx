@@ -19,7 +19,7 @@ export default function Home() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar style="light" />
       <ScrollView>
         <Carrusel datos= {peliculas} origen='Home' tipo='pelicula' genero='RECOMENDADAS' />
@@ -28,6 +28,6 @@ export default function Home() {
         <Carrusel datos= {series} origen='Home' tipo='serie' genero='SERIES POPULARES' />  
       </ScrollView>
       
-    </SafeAreaView>
+    </View>
   );
 }

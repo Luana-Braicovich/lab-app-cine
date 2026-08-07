@@ -1,21 +1,23 @@
 import { Text, View, Image} from 'react-native';
 import stylesinfo from '../Styles/stylesInfo'
-import icono from '../assets/user-icon.png';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 const Review=({review})=> {
     if(review?.length>0){
 
     return(
-        <View style={stylesinfo.review}>
+        <View style={stylesinfo.reviews}>
             {review.map((item,index)=>(
-            <View key={index}> 
-                <View style={stylesinfo.header}> 
-                <Image source={icono}
-                style={stylesinfo.icono}/>
-                <Text>{item.usuario}</Text>
-                <Text>Calificacion: {item.calificacion} ★</Text>
+            <View key={index} style={stylesinfo.box}> 
+                <View style={stylesinfo.headerReviews}> 
+                    <FontAwesome5 name="user-circle" size={24} color="white" />
+                    <View> 
+                        <Text style={stylesinfo.titles}>{item.usuario}</Text>
+                        <Text style={stylesinfo.titles}>Calificacion: {item.calificacion} ★</Text>
+                    </View>
                 </View>
-                <Text>{item.comentario}</Text>
+                <Text style={stylesinfo.titles}>{item.fecha? item.fecha:'22/7/26'}</Text>
+                <Text style={stylesinfo.text}>{item.comentario}</Text>
             </View>
             ))}
             

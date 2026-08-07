@@ -33,7 +33,7 @@ export default function Inicio() {
       <Estrellas />
       <Text style={styles.text}>Clasifica las peliculas y series de tu interes.</Text>
       
-      <Link screen="Home" style={styles.boton}>Comienza</Link>
+      <Link screen="HomeTabs" style={styles.boton}>Comienza</Link>
 
       <Carrusel datos= {peliculas} origen='inicio' tipo='pelicula' genero='POPULARES' />
       <Carrusel datos= {peliculas} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
