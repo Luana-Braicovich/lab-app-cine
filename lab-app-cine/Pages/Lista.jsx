@@ -23,7 +23,6 @@ export default function Lista({route}) {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
-      <View>
         <FlatList
           data={lista}
           numColumns={2}
@@ -36,7 +35,6 @@ export default function Lista({route}) {
           onEndReached={()=>{setPaginado(pagina+1)}}
           onEndReachedThreshold={0}
       />      
-      </View>
     </View>
   );
 }

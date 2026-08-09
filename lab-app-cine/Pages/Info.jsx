@@ -19,6 +19,7 @@ export default function Info({route}) {
     const {pelicula, tipo, newReview} = route.params;
     const [elemento, setElemento]= useState([]);
     const [actualizar,actualizarElemento]=useState(false);
+    let valor='';
     useEffect(()=>{
         obtenerInfo({nombre:pelicula.titulo, tipo}).then((informacion)=>setElemento(informacion))
     },[actualizar]);
@@ -29,7 +30,7 @@ export default function Info({route}) {
         })
     })
 
-    if (!elemento) {
+    if (elemento.length===0) {
         return null; 
     }
 

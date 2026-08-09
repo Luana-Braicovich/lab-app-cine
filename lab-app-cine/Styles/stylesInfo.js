@@ -8,7 +8,6 @@ const stylesinfo = StyleSheet.create({
         gap:10
     },
     principal:{
-        //flex: 1,
         flexDirection: 'row',
         alignItems:'center',
         justifyContent:'space-evenly',

@@ -5,15 +5,11 @@ const styles = StyleSheet.create({
   logo:{
     width:50,
     height:50,
-    marginLeft:20
+    marginLeft:15
   },
   container: {
     flex: 1,
     backgroundColor:'#121b24',
-  },
-  lista: {
-    marginBottom:10,
-    alignSelf:'center',
   },
   tab:{
     tabBarActiveTintColor:'#F26680',
@@ -30,6 +26,7 @@ const styles = StyleSheet.create({
     },
     headerTitleAlign:'center'
   },
+
   header:{
     headerStyle: {
       backgroundColor: '#1f2f3f',
@@ -40,7 +37,6 @@ const styles = StyleSheet.create({
       fontsize: 50
     },
     headerTitleAlign:'center'
-
   },
   text: {
     textAlign: 'center',
@@ -67,10 +63,8 @@ const styles = StyleSheet.create({
     fontSize: 60
   },
   starsbar: {
-    //flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
-    //textAlign:'center',
   },
   background:{
     flex: 1,
@@ -102,6 +96,16 @@ const styles = StyleSheet.create({
   escena:{
     width:500,
     height:260
+  },
+  input:{
+    height: 50,
+    backgroundColor:'white',
+    paddingLeft:20,
+    fontSize:20
+  },
+  lista: {
+    marginBottom:10,
+    alignSelf:'center',
   }
 });
 
