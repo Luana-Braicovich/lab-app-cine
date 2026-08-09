@@ -1,8 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View,ScrollView} from 'react-native';
+import { View, FlatList} from 'react-native';
 import styles from '../Styles/stylesGeneral'
 import Carrusel from '../Components/Carrusel';
-import {SafeAreaView} from 'react-native-safe-area-context';
 import { obtenerElementos } from '../Funciones/obtenerElementos';
 import { useState, useEffect } from 'react';
 
@@ -18,16 +17,23 @@ export default function Home() {
   return null; 
   }
 
-  return (
-    <View style={styles.container}>
-      <StatusBar style="light" />
-      <ScrollView>
-        <Carrusel datos= {peliculas} origen='Home' tipo='pelicula' genero='RECOMENDADAS' />
-        <Carrusel datos= {peliculas} origen='Home' tipo='pelicula' genero='TERROR' /> 
-        <Carrusel datos= {peliculas} origen='Home' tipo='pelicula' genero='ANIMACION' />
-        <Carrusel datos= {series} origen='Home' tipo='serie' genero='SERIES POPULARES' />  
-      </ScrollView>
-      
+  return(
+    <View style= {styles.container}>
+      <StatusBar style='light'/>
+      <FlatList
+        data={[
+          {tipo:'pelicula', datos:peliculas, genero:'RECOMENDADAS'},
+          {tipo:'pelicula', datos:peliculas, genero:'TERROR'},
+          {tipo:'pelicula', datos:peliculas, genero:'ANIMACION'},
+          {tipo:'pelicula', datos:peliculas, genero:'ROMANCE'},
+          {tipo:'serie', datos:series, genero:'SERIES POPULARES'}
+        ]}
+        renderItem={({item})=>(
+          <View>
+            <Carrusel datos= {item.datos[item.genero]} origen='Home' tipo={item.tipo} genero={item.genero} />
+          </View>
+        )}
+      />
     </View>
-  );
+  )
 }

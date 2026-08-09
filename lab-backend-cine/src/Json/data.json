@@ -1786,6 +1786,12 @@
           "usuario": "adventurereview",
           "comentario": "Divertida y llena de acción, pero un poco confusa.",
           "calificacion": 4
+        },
+        {
+          "usuario": "default",
+          "fecha": "8/8/2026",
+          "comentario": "Me gusto la peli",
+          "calificacion": 4
         }
       ]
     },
@@ -2390,6 +2396,24 @@
           "usuario": "quimico_ron",
           "comentario": "Cada episodio es una lección de narrativa.",
           "calificacion": 5
+        },
+        {
+          "usuario": "default",
+          "fecha": "8/8/2026",
+          "comentario": "No me gusto",
+          "calificacion": 0
+        },
+        {
+          "usuario": "default",
+          "fecha": "8/8/2026",
+          "comentario": "No me gusto",
+          "calificacion": 2
+        },
+        {
+          "usuario": "default",
+          "fecha": "8/8/2026",
+          "comentario": "No",
+          "calificacion": 0
         }
       ]
     },

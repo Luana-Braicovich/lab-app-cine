@@ -35,8 +35,8 @@ export default function Inicio() {
       
       <Link screen="HomeTabs" style={styles.boton}>Comienza</Link>
 
-      <Carrusel datos= {peliculas} origen='inicio' tipo='pelicula' genero='POPULARES' />
-      <Carrusel datos= {peliculas} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
+      <Carrusel datos= {peliculas['POPULARES']} origen='inicio' tipo='pelicula' genero='POPULARES' />
+      <Carrusel datos= {peliculas['PROXIMAMENTE']} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
 
       </View>    
 

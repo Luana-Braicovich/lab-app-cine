@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   logo:{
     width:50,
     height:50,
+    marginLeft:20
   },
   container: {
     flex: 1,

@@ -17,7 +17,8 @@ function HomeTabs(){
   return(
     <Tab.Navigator screenOptions={styles.tab}>
       <Tab.Screen name="Home" component={Home} options={{
-        headerTitle: () => (
+        headerTitle:"",
+        headerLeft: () => (
           <Image
               source={require('../assets/logo1.png')}
               style={styles.logo}
