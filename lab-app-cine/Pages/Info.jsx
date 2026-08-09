@@ -22,6 +22,7 @@ export default function Info({route}) {
     let valor='';
     useEffect(()=>{
         obtenerInfo({nombre:pelicula.titulo, tipo}).then((informacion)=>setElemento(informacion))
+        console.log(elemento);
     },[actualizar]);
 
     useLayoutEffect(()=>{
@@ -39,7 +40,7 @@ export default function Info({route}) {
         <StatusBar style="light" />
         <ScrollView>
         <View style={stylesinfo.info}>
-            <ListarInfo datos= {elemento} tipo= {tipo}/>
+            <ListarInfo datos= {elemento}/>
             <Popup actualizar={()=> actualizarElemento(!actualizar)} datos={elemento} tipo={tipo}/>
             <Review review= {elemento.reviews}/>
         </View>    

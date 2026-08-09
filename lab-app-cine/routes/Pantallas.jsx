@@ -28,14 +28,21 @@ function HomeTabs(){
             />
           </Link> 
           ),
-          headerRight: ({color, size}) => (
+        tabBarIcon:({color,size})=>(<MaterialIcons name="home-filled" size={size} color={color} />)}}/>
+      <Tab.Screen name="Peliculas" component={Lista} initialParams={{contenido:"pelicula"}} options={{
+        tabBarIcon:({color,size})=>(<MaterialIcons name="movie" size={size} color={color} />),
+        headerRight: ({color, size}) => (
               <Link screen="Buscar" params={{contenido:"pelicula"}} style={[styles.logo,{marginTop:20}]}>
                 <MaterialIcons name="search" size={30} color={'#F26680'} />
               </Link> 
-            ),
-        tabBarIcon:({color,size})=>(<MaterialIcons name="home-filled" size={size} color={color} />)}}/>
-      <Tab.Screen name="Peliculas" component={Lista} initialParams={{contenido:"pelicula"}} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="movie" size={size} color={color} />),}}/>
-      <Tab.Screen name="Series" component={Lista} initialParams={{contenido:"serie"}} options={{tabBarIcon:({color,size})=>(<MaterialIcons name="tv" size={size} color={color} />)}}/>
+            ),}}/>
+      <Tab.Screen name="Series" component={Lista} initialParams={{contenido:"serie"}} options={{
+        tabBarIcon:({color,size})=>(<MaterialIcons name="tv" size={size} color={color} />),
+        headerRight: ({color, size}) => (
+              <Link screen="Buscar" params={{contenido:"serie"}} style={[styles.logo,{marginTop:20}]}>
+                <MaterialIcons name="search" size={30} color={'#F26680'} />
+              </Link> 
+            ),}}/>
     </Tab.Navigator>
   )
 }

@@ -1254,6 +1254,12 @@
           "usuario": "multiverse_traveler",
           "comentario": "Visualmente impactante y muy entretenida.",
           "calificacion": 4
+        },
+        {
+          "usuario": "default",
+          "fecha": "9/8/2026",
+          "comentario": "Me gusto la animacion",
+          "calificacion": 5
         }
       ]
     },
@@ -2390,6 +2396,24 @@
           "usuario": "quimico_ron",
           "comentario": "Cada episodio es una lección de narrativa.",
           "calificacion": 5
+        },
+        {
+          "usuario": "default",
+          "fecha": "9/8/2026",
+          "comentario": "Me gusto el final",
+          "calificacion": 5
+        },
+        {
+          "usuario": "default",
+          "fecha": "9/8/2026",
+          "comentario": "No tengo opinion",
+          "calificacion": 0
+        },
+        {
+          "usuario": "default",
+          "fecha": "9/8/2026",
+          "comentario": "Prueba para bajar promedio",
+          "calificacion": 0
         }
       ]
     },
@@ -2436,6 +2460,12 @@
         {
           "usuario": "royal_fan",
           "comentario": "Las actuaciones son simplemente sobresalientes.",
+          "calificacion": 4
+        },
+        {
+          "usuario": "default",
+          "fecha": "9/8/2026",
+          "comentario": "Me gusto ",
           "calificacion": 4
         }
       ]

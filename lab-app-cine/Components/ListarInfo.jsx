@@ -6,7 +6,7 @@ import {Dimensions} from 'react-native';
 
 
 
-const ListarInfo=({datos,tipo})=> {
+const ListarInfo=({datos})=> {
     const detalles=datos.detalles;
     const personas=datos.cast;
     const crews=datos.crew;  
@@ -28,9 +28,9 @@ const ListarInfo=({datos,tipo})=> {
                 <Text style={[stylesinfo.titles, {fontSize:30}]}>{datos.titulo}</Text>
                 <Text style={stylesinfo.text}>
                     {datos.fecha_estreno}
-                    {tipo==='pelicula'?', dirigida por ':', creada por '}
+                    {datos.director?', dirigida por ':', creada por '}
                 </Text>
-                <Text style={stylesinfo.titles}>{tipo==='pelicula'?datos.director:datos.creador}</Text>
+                <Text style={stylesinfo.titles}>{datos.director?datos.director:datos.creador}</Text>
             </View>
         </View>
 
@@ -54,18 +54,18 @@ const ListarInfo=({datos,tipo})=> {
             <Text style={stylesinfo.text}>          Director/a de fotografia: {crews?.direccion_de_fotografia}</Text>
 
             <Text style={stylesinfo.titles}>Detalles:</Text>
-            <Detalles detalles={detalles} tipo={tipo}/>
+            <Detalles detalles={detalles}/>
         </View>
     </View>
     );
 }
 
-const Detalles=({detalles, tipo})=>{
+const Detalles=({detalles})=>{
     return(
         <View>
             <Text style={stylesinfo.text}>          Duracion: {detalles?.duracion}</Text>
             <Text style={stylesinfo.text}>          Clasificacion: {detalles?.clasificacion}</Text>
-            {tipo==='serie' && 
+            {detalles.temporadas && 
             (<View> 
             <Text style={stylesinfo.text}>          Temporadas: {detalles?.temporadas}</Text>
             <Text style={stylesinfo.text}>          Capitulos: {detalles?.capitulos}</Text>

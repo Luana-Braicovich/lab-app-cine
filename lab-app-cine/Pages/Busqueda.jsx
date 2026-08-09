@@ -14,7 +14,7 @@ export default function Busqueda({route}) {
     const windowWidth = Dimensions.get('window').width;
 
     useEffect(()=>{
-        obtenerInfo({nombre: '', tipo:''}).then((elem)=>setData(elem))
+        obtenerInfo({nombre: '', tipo:contenido}).then((elem)=>setData(elem))
     },[]);
     
     useEffect(()=>{
@@ -35,7 +35,7 @@ export default function Busqueda({route}) {
             style={[{width:windowWidth, marginBottom:10},styles.input]}
             onChangeText={cambioTexto}
             value={texto}
-            placeholder="Buscar series y peliculas"
+            placeholder={"Buscar ",contenido}
         />
         <FlatList
             data={lista}
