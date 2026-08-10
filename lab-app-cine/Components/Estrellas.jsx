@@ -4,26 +4,11 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from '../Styles/stylesGeneral'
 
 const DATA = [
-  {
-    id: 1,
-    title: '★',
-  },
-  {
-    id: 2,
-    title: '★',
-  },
-  {
-    id: 3,
-    title: '★',
-  },
-  {
-    id: 4,
-    title: '★',
-  },
-  {
-    id: 5,
-    title: '★',
-  },
+  { id: 1, title: '★'},
+  { id: 2, title: '★'},
+  { id: 3, title: '★'},
+  { id: 4, title: '★'},
+  { id: 5, title: '★'},
 ];
 
 export const Item = ({item, onPress, textColor}) => (
@@ -37,15 +22,14 @@ const Estrellas = () => {
 
   return (
     <SafeAreaView style={styles.starsbar}>
-            {DATA.map((item)=>(
-                <Item
-                  key={item.id}
-                  item={item}
-                  onPress={()=> setRating(item.id)}
-                  textColor={item.id<=rating ?  '#F26680' : 'white'}
-                />
-                
-            ))}
+      {DATA.map((item)=>(
+        <Item
+          key={item.id}
+          item={item}
+          onPress={()=> setRating(item.id)}
+          textColor={item.id<=rating ?  '#F26680' : 'white'}
+        />
+      ))}
     </SafeAreaView>
   );
 };

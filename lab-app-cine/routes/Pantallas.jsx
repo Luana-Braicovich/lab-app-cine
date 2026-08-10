@@ -7,9 +7,8 @@ import Info from '../Pages/Info'
 import Lista from '../Pages/Lista'
 import Busqueda from '../Pages/Busqueda';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { Image, Pressable } from 'react-native';
+import { Image } from 'react-native';
 import { Link } from '@react-navigation/native';
-
 
 
 const Stack = createNativeStackNavigator();
@@ -18,6 +17,7 @@ const Tab = createBottomTabNavigator();
 function HomeTabs(){
   return(
     <Tab.Navigator screenOptions={styles.tab}>
+
       <Tab.Screen name="Home" component={Home} options={{
         headerTitle:"",
         headerLeft: () => (
@@ -27,22 +27,29 @@ function HomeTabs(){
                 style={styles.logo}
             />
           </Link> 
-          ),
-        tabBarIcon:({color,size})=>(<MaterialIcons name="home-filled" size={size} color={color} />)}}/>
+        ),
+        tabBarIcon:({color,size})=>(
+          <MaterialIcons name="home-filled" size={size} color={color} />
+        )}}/>
+
       <Tab.Screen name="Peliculas" component={Lista} initialParams={{contenido:"pelicula"}} options={{
-        tabBarIcon:({color,size})=>(<MaterialIcons name="movie" size={size} color={color} />),
+        tabBarIcon:({color,size})=>(
+          <MaterialIcons name="movie" size={size} color={color} />),
         headerRight: ({color, size}) => (
-              <Link screen="Buscar" params={{contenido:"pelicula"}} style={[styles.logo,{marginTop:20}]}>
-                <MaterialIcons name="search" size={30} color={'#F26680'} />
-              </Link> 
-            ),}}/>
+          <Link screen="Buscar" params={{contenido:"pelicula"}} style={[styles.logo,{marginTop:20}]}>
+            <MaterialIcons name="search" size={30} color={'#F26680'} />
+          </Link> 
+        )}}/>
+      
       <Tab.Screen name="Series" component={Lista} initialParams={{contenido:"serie"}} options={{
-        tabBarIcon:({color,size})=>(<MaterialIcons name="tv" size={size} color={color} />),
+        tabBarIcon:({color,size})=>(
+          <MaterialIcons name="tv" size={size} color={color} />),
         headerRight: ({color, size}) => (
-              <Link screen="Buscar" params={{contenido:"serie"}} style={[styles.logo,{marginTop:20}]}>
-                <MaterialIcons name="search" size={30} color={'#F26680'} />
-              </Link> 
-            ),}}/>
+          <Link screen="Buscar" params={{contenido:"serie"}} style={[styles.logo,{marginTop:20}]}>
+            <MaterialIcons name="search" size={30} color={'#F26680'} />
+          </Link> 
+        )}}/>
+        
     </Tab.Navigator>
   )
 }

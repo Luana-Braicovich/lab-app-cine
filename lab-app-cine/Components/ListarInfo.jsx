@@ -1,6 +1,4 @@
-import { Text, View, Image,Pressable} from 'react-native';
-import styles from '../Styles/stylesGeneral'
-import {SafeAreaView} from 'react-native-safe-area-context';
+import { Text, View, Image} from 'react-native';
 import stylesinfo from '../Styles/stylesInfo';
 import {Dimensions} from 'react-native';
 

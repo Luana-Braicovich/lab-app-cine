@@ -1,5 +1,6 @@
 export async function obtenerInfo({nombre , tipo}){
-    console.log('busco', nombre)
+    //Si tengo el nombre de la pelicula la busco en la bd y devuelvo su informacion completa,
+    //Sino, devuelvo todas las peliculas, todas las series, o todos los datos
     const datos = await fetch('http://192.168.0.236:3030/datos');
     const json= await datos.json();
 

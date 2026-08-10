@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, ImageBackground, Image, ScrollView } from 'react-native';
+import { Text, View, ImageBackground, ScrollView } from 'react-native';
 import { Link } from '@react-navigation/native';
 import { useState, useEffect } from 'react';
 import background from '../assets/gradiente.jpg';
@@ -11,11 +11,12 @@ import { obtenerElementos } from '../Funciones/obtenerElementos';
 
 export default function Inicio() {
   const [peliculas, setPeliculas]= useState([])
+
   useEffect(()=>{
     obtenerElementos('pelicula').then((pelicula)=>setPeliculas(pelicula))
   },[]);
 
-  if(!peliculas){
+  if(peliculas.length===0){
     return null;
   }
 
@@ -25,23 +26,18 @@ export default function Inicio() {
       <ImageBackground 
       style={styles.background}
       source={background}>
-
       <ScrollView>
-
       <View style={styles.margenes}>
 
-      <Estrellas />
-      <Text style={styles.text}>Clasifica las peliculas y series de tu interes.</Text>
-      
-      <Link screen="HomeTabs" style={styles.boton}>Comienza</Link>
+        <Estrellas />
+        <Text style={styles.text}>Clasifica las peliculas y series de tu interes.</Text>
+        <Link screen="HomeTabs" style={styles.boton}>Comienza</Link>
 
-      <Carrusel datos= {peliculas['POPULARES']} origen='inicio' tipo='pelicula' genero='POPULARES' />
-      <Carrusel datos= {peliculas['PROXIMAMENTE']} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
+        <Carrusel datos= {peliculas['POPULARES']} origen='inicio' tipo='pelicula' genero='POPULARES' />
+        <Carrusel datos= {peliculas['PROXIMAMENTE']} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
 
       </View>    
-
       </ScrollView>
-
       </ImageBackground>
     </SafeAreaView>
   );

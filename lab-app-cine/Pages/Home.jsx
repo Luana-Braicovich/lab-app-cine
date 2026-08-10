@@ -7,14 +7,16 @@ import { useState, useEffect } from 'react';
 
 
 export default function Home() {
-    const [peliculas, setPeliculas]= useState(null)
-    const [series, setSeries]= useState(null)
-    useEffect(()=>{
-      obtenerElementos('pelicula').then((pelicula)=>setPeliculas(pelicula))
-      obtenerElementos('serie').then((serie)=>setSeries(serie))
-    },[]);
+  const [peliculas, setPeliculas]= useState(null)
+  const [series, setSeries]= useState(null)
+
+  useEffect(()=>{
+    obtenerElementos('pelicula').then((pelicula)=>setPeliculas(pelicula))
+    obtenerElementos('serie').then((serie)=>setSeries(serie))
+  },[]);
+
   if (!peliculas || !series) {
-  return null; 
+    return null; 
   }
 
   return(

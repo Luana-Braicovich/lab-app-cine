@@ -1,25 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, View, Text} from 'react-native';
-import styles from '../Styles/stylesGeneral'
-import Carrusel from '../Components/Carrusel';
+import { ScrollView, View } from 'react-native';
+import { useEffect, useState, useLayoutEffect } from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
-import { useLayoutEffect } from 'react';
-import ListarInfo from '../Components/ListarInfo'
 import { obtenerInfo } from '../Funciones/obtenerInfo';
-import { useEffect, useState } from 'react';
+import ListarInfo from '../Components/ListarInfo'
 import Review from '../Components/Review'
 import Popup from '../Components/Popup';
-import stylesinfo from '../Styles/stylesInfo';
 import BotonInfo from '../Components/BotonInfo';
-
+import stylesinfo from '../Styles/stylesInfo';
+import styles from '../Styles/stylesGeneral'
 
 export default function Info({route}) {
     const navigation = useNavigation();
-    const {pelicula, tipo, newReview} = route.params;
+    const {pelicula, tipo} = route.params;
     const [elemento, setElemento]= useState([]);
     const [actualizar,actualizarElemento]=useState(false);
-    let valor='';
     useEffect(()=>{
         obtenerInfo({nombre:pelicula.titulo, tipo}).then((informacion)=>setElemento(informacion))
         console.log(elemento);

@@ -1,8 +1,6 @@
 import { Text, View,Pressable, Modal,TextInput} from 'react-native';
 import styles from '../Styles/stylesGeneral'
 import {useState} from 'react';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import Review from './Review'
 import stylesinfo from '../Styles/stylesInfo';
 import { Item } from './Estrellas';
 import { almacenarReview } from '../Funciones/almacenarReview';
@@ -16,7 +14,7 @@ const estrellas = [
     { id: 2, title: '★'},
     { id: 3, title: '★'},
     { id: 4, title: '★'},
-    { id: 5, title: '★'},
+    { id: 5, title: '★'}
 ];
 
 const Popup=({actualizar,datos,tipo})=>{
@@ -42,25 +40,23 @@ const Popup=({actualizar,datos,tipo})=>{
                     <View style={stylesinfo.modal}>
                         <View style={{flexDirection:'row', alignItems:'center'}}>
                             <Text style={stylesinfo.textModal}>    Agregar Review   </Text>
-                            <Pressable onPress={
-                                ()=>{setModalVisible(false);
-                                    cambioTexto('');
-                                    setRating(0);}
-                            } >
+                            <Pressable onPress={()=>{
+                                setModalVisible(false);
+                                cambioTexto('');
+                                setRating(0);
+                            }}>
                                 {({pressed}) => (
                                     <FontAwesome name="close" size={30} color={pressed ? '#F26680' : 'black'} />)}
                             </Pressable>
                         </View>
                         <View style={styles.starsbar}>
-                                {estrellas.map((item)=>(
-                                    <Item
+                            {estrellas.map((item)=>(
+                                <Item
                                     key={item.id}
                                     item={item}
                                     onPress={()=> setRating(item.id)}
-                                    textColor={item.id<=rating ?  '#F26680' : 'black'}
-                                    />
-                                    
-                                ))}
+                                    textColor={item.id<=rating ?  '#F26680' : 'black'}/>
+                            ))}
                         </View>
                         <TextInput
                             style={stylesinfo.input}
@@ -69,15 +65,15 @@ const Popup=({actualizar,datos,tipo})=>{
                             placeholder="Ingresar Review"
                         />
                         <Pressable
-                        style={({pressed}) => [
-                        {backgroundColor: pressed ? '#4c565f' : '#F26680' ,}
-                        ]}  
-                        onPress={() => {setModalVisible(false);
-                                        cambioTexto('');
-                                        setRating(0);
-                                        almacenarReview(titulo,tipo,rating,texto).then(actualizar())
-                                        }}> 
-                        <Text style={stylesinfo.textModal}> Guardar </Text>
+                            style={({pressed}) => [
+                                {backgroundColor: pressed ? '#4c565f' : '#F26680'}]}  
+                            onPress={() => {
+                                setModalVisible(false);
+                                cambioTexto('');
+                                setRating(0);
+                                almacenarReview(titulo,tipo,rating,texto).then(actualizar())
+                        }}> 
+                            <Text style={stylesinfo.textModal}> Guardar </Text>
                         </Pressable>
                     </View>
                 </View>

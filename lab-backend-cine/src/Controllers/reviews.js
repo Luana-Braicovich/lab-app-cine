@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path  = require('path');
-//const data = JSON.parse(fs.readFileSync('../Json/data.json', 'utf8'));
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../Json/data.json'), 'utf8'));
 
 

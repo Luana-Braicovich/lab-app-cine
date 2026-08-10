@@ -1,9 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, FlatList, ActivityIndicator} from 'react-native';
-import styles from '../Styles/stylesGeneral'
-import {SafeAreaView} from 'react-native-safe-area-context';
-import { obtenerInfo } from '../Funciones/obtenerInfo';
+import { View, FlatList, ActivityIndicator} from 'react-native';
 import { useState, useEffect } from 'react';
+import styles from '../Styles/stylesGeneral'
+import { obtenerInfo } from '../Funciones/obtenerInfo';
 import { Peliculas } from '../Components/Carrusel';
 
 
@@ -17,7 +16,7 @@ export default function Lista({route}) {
   },[pagina]);
 
   if (!lista) {
-  return null; 
+    return null; 
   }
 
   return (

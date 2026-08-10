@@ -31,7 +31,7 @@ export default function Carrusel({datos, origen, tipo, genero}){
 export function Peliculas ({origen, pelicula, tipo, genero}) {
     const {navigate} = useNavigation();
     const windowWidth = Dimensions.get('window').width;
-        return(
+    return(
         <Pressable onPress={origen==='Home'? ()=>navigate('Info', {pelicula, tipo}):undefined}>
             <ImageBackground
                 source={genero==='RECOMENDADAS'? {uri:pelicula.alternativo}:{uri:pelicula.poster}}
@@ -41,11 +41,9 @@ export function Peliculas ({origen, pelicula, tipo, genero}) {
                     <View style={{ flex: 1, justifyContent: 'flex-end' }}>
                         <Text style={[styles.titles]}>{pelicula.titulo}</Text>
                     </View>
-                    )
-                    }
+                )}
             </ImageBackground>
-            
         </Pressable>
-        )
-    }
+    )
+}
 

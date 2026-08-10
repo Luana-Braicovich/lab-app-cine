@@ -24,20 +24,18 @@ app.get("/datos",(req,res)=>{
   res.json(datos);
 })
 
+app.post('/reviews', (req, res) => {
+  const { usuario, comentario, calificacion, fecha, titulo, tipo } = req.body;
+  if (usuario && comentario && fecha && titulo && tipo) {
+    //No pregunta por calificacion pues acepta calificacion=0
+    reviews.add_review(req, res)
+  } else {
+    res.status(400).send("no se enviaron los datos suficientes")
+  }
+});
+
 const PORT =  3030;
 app.listen(PORT, '0.0.0.0',() => {
   console.log(`El servidor esta en ${PORT}`);
-});
-
-
-app.post('/reviews', (req, res) => {
-    const { usuario, comentario, calificacion, fecha, titulo, tipo } = req.body;
-    console.log('pongo review');
-    if (usuario && comentario && fecha && titulo && tipo) {
-      console.log('se va a guardar');
-        reviews.add_review(req, res)
-    } else {
-        res.status(400).send("no se enviaron los datos suficientes")
-    }
 });
 
