@@ -7,17 +7,16 @@ import styles from '../Styles/stylesGeneral'
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Estrellas from '../Components/Estrellas';
 import Carrusel from '../Components/Carrusel';
-import { obtenerElementos } from '../Funciones/obtenerElementos';
+import { obtenerPeliculas } from '../Funciones/obtenerPeliculas';
 
 export default function Inicio() {
   const [peliculas, setPeliculas]= useState([])
-
   useEffect(()=>{
-    obtenerElementos('pelicula').then((pelicula)=>setPeliculas(pelicula))
+    obtenerPeliculas().then((pelicula)=>setPeliculas(pelicula))
   },[]);
 
   if(peliculas.length===0){
-    return null;
+    return (<Text>Ocurrio un error</Text>)
   }
 
   return (
@@ -33,8 +32,8 @@ export default function Inicio() {
         <Text style={styles.text}>Clasifica las peliculas y series de tu interes.</Text>
         <Link screen="HomeTabs" style={styles.boton}>Comienza</Link>
 
-        <Carrusel datos= {peliculas['POPULARES']} origen='inicio' tipo='pelicula' genero='POPULARES' />
-        <Carrusel datos= {peliculas['PROXIMAMENTE']} origen='inicio' tipo='pelicula' genero='PROXIMAMENTE'/>
+        <Carrusel datos= {peliculas['POPULARES']} tipo='pelicula' genero='POPULARES' isPressable={false} isAlternative={false}/>
+        <Carrusel datos= {peliculas['PROXIMAMENTE']} tipo='pelicula' genero='PROXIMAMENTE' isPressable={false} isAlternative={false}/>
 
       </View>    
       </ScrollView>

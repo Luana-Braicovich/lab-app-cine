@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, FlatList} from 'react-native';
+import { View, FlatList, Text} from 'react-native';
 import styles from '../Styles/stylesGeneral'
 import Carrusel from '../Components/Carrusel';
-import { obtenerElementos } from '../Funciones/obtenerElementos';
 import { useState, useEffect } from 'react';
+import { obtenerPeliculas } from '../Funciones/obtenerPeliculas';
+import { obtenerSeries } from '../Funciones/obtenerSeries';
 
 
 export default function Home() {
@@ -11,12 +12,14 @@ export default function Home() {
   const [series, setSeries]= useState(null)
 
   useEffect(()=>{
-    obtenerElementos('pelicula').then((pelicula)=>setPeliculas(pelicula))
-    obtenerElementos('serie').then((serie)=>setSeries(serie))
+    obtenerSeries().then((serie)=>setSeries(serie))
+    obtenerPeliculas().then((pelicula)=>setPeliculas(pelicula));
+    console.log('ayuda');
+    
   },[]);
 
   if (!peliculas || !series) {
-    return null; 
+    return (<Text>Ocurrio un error</Text>)
   }
 
   return(
@@ -32,7 +35,7 @@ export default function Home() {
         ]}
         renderItem={({item})=>(
           <View>
-            <Carrusel datos= {item.datos[item.genero]} origen='Home' tipo={item.tipo} genero={item.genero} />
+            <Carrusel datos= {item.datos[item.genero]} tipo={item.tipo} genero={item.genero} isPressable={true} isAlternative={item.genero==='RECOMENDADAS'}/>
           </View>
         )}
       />

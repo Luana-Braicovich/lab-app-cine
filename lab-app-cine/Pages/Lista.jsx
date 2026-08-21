@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, FlatList, ActivityIndicator} from 'react-native';
+import { View, FlatList, ActivityIndicator, Text} from 'react-native';
 import { useState, useEffect } from 'react';
 import styles from '../Styles/stylesGeneral'
 import { obtenerInfo } from '../Funciones/obtenerInfo';
@@ -15,8 +15,8 @@ export default function Lista({route}) {
     obtenerInfo({nombre:'', tipo:contenido}).then((elem)=>setLista([... lista,...elem]))
   },[pagina]);
 
-  if (!lista) {
-    return null; 
+  if (lista.length===0) {
+    return (<Text>Ocurrio un error</Text>);
   }
 
   return (

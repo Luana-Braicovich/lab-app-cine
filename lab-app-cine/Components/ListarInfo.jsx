@@ -1,8 +1,8 @@
 import { Text, View, Image} from 'react-native';
 import stylesinfo from '../Styles/stylesInfo';
 import {Dimensions} from 'react-native';
-
-
+import Calificacion from './Calificacion';
+import Detalles from './Detalles';
 
 const ListarInfo=({datos})=> {
     const detalles=datos.detalles;
@@ -57,38 +57,5 @@ const ListarInfo=({datos})=> {
     </View>
     );
 }
-
-const Detalles=({detalles})=>{
-    return(
-        <View>
-            <Text style={stylesinfo.text}>          Duracion: {detalles?.duracion}</Text>
-            <Text style={stylesinfo.text}>          Clasificacion: {detalles?.clasificacion}</Text>
-            {detalles.temporadas && 
-            (<View> 
-            <Text style={stylesinfo.text}>          Temporadas: {detalles?.temporadas}</Text>
-            <Text style={stylesinfo.text}>          Capitulos: {detalles?.capitulos}</Text>
-            </View>)}
-        </View>
-    )  
-}
-
-const Calificacion=({reviews})=>{
-    let calificacionTotal=0;
-    let cantidad=0;
-    reviews?.map((item)=>{
-        calificacionTotal= calificacionTotal + item.calificacion;
-        cantidad=cantidad+1;
-    })
-    let promedio=0;
-    if (cantidad > 0) { promedio = Math.round(calificacionTotal / cantidad) }
-
-    return(
-        <View>
-            <Text style={stylesinfo.titles}>Calificacion: {promedio} ★</Text> 
-        </View>
-    )  
-}
-
-
 
 export default ListarInfo
