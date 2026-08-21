@@ -14,8 +14,6 @@ export default function Home() {
   useEffect(()=>{
     obtenerSeries().then((serie)=>setSeries(serie))
     obtenerPeliculas().then((pelicula)=>setPeliculas(pelicula));
-    console.log('ayuda');
-    
   },[]);
 
   if (!peliculas || !series) {
