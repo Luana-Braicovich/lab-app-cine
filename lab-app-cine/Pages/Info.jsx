@@ -18,7 +18,7 @@ export default function Info({route}) {
     const [actualizar,actualizarElemento]=useState(false);
 
     useEffect(()=>{
-        obtenerInfo({nombre:elem.titulo, tipo}).then((informacion)=>setElemento(informacion))
+        obtenerInfo({nombre:elem.titulo, tipo:tipo}).then((informacion)=>setElemento(informacion))
     },[actualizar]);
 
     useLayoutEffect(()=>{
