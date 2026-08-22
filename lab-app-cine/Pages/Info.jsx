@@ -19,7 +19,6 @@ export default function Info({route}) {
 
     useEffect(()=>{
         obtenerInfo({nombre:elem.titulo, tipo}).then((informacion)=>setElemento(informacion))
-        console.log(elemento);
     },[actualizar]);
 
     useLayoutEffect(()=>{
