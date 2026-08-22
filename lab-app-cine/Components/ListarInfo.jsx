@@ -2,7 +2,6 @@ import { Text, View, Image} from 'react-native';
 import stylesinfo from '../Styles/stylesInfo';
 import {Dimensions} from 'react-native';
 import Calificacion from './Calificacion';
-import Detalles from './Detalles';
 
 const ListarInfo=({datos})=> {
     const detalles=datos.detalles;
@@ -20,7 +19,7 @@ const ListarInfo=({datos})=> {
                     source={{uri:datos.poster}}
                     style={stylesinfo.card}
                 /> 
-                <Calificacion reviews= {reviews}/>
+                <Text style={stylesinfo.titles}>Calificacion: {Calificacion({reviews})} ★</Text>
             </View>
             <View style={{width:windowWidth}}>
                 <Text style={[stylesinfo.titles, {fontSize:30}]}>{datos.titulo}</Text>
@@ -52,7 +51,13 @@ const ListarInfo=({datos})=> {
             <Text style={stylesinfo.text}>          Director/a de fotografia: {crews?.direccion_de_fotografia}</Text>
 
             <Text style={stylesinfo.titles}>Detalles:</Text>
-            <Detalles detalles={detalles}/>
+            <Text style={stylesinfo.text}>          Duracion: {detalles?.duracion}</Text>
+            <Text style={stylesinfo.text}>          Clasificacion: {detalles?.clasificacion}</Text>
+            {detalles.temporadas && 
+            (<View> 
+            <Text style={stylesinfo.text}>          Temporadas: {detalles?.temporadas}</Text>
+            <Text style={stylesinfo.text}>          Capitulos: {detalles?.capitulos}</Text>
+            </View>)}
         </View>
     </View>
     );

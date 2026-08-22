@@ -11,9 +11,5 @@ export default function Calificacion({reviews}){
     let promedio=0;
     if (cantidad > 0) { promedio = Math.round(calificacionTotal / cantidad) }
 
-    return(
-        <View>
-            <Text style={stylesinfo.titles}>Calificacion: {promedio} ★</Text> 
-        </View>
-    )  
+    return promedio;
 }

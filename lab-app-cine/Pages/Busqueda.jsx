@@ -3,7 +3,7 @@ import { Text, View, Dimensions, TextInput, FlatList} from 'react-native';
 import styles from '../Styles/stylesGeneral'
 import { obtenerInfo } from '../Funciones/obtenerInfo';
 import { useState, useEffect } from 'react';
-import { Peliculas } from '../Components/Carrusel';
+import Posters from '../Components/Posters';
 
 
 export default function Busqueda({route}) {
@@ -42,7 +42,7 @@ export default function Busqueda({route}) {
             numColumns={2}
             renderItem={({item})=>(
             <View style={styles.lista}>
-                <Peliculas origen={'Home'} pelicula={item} tipo={contenido} genero={""} /> 
+                <Posters elem={item} tipo={contenido} genero={""} isPressable={true} isAlternative={false} />
             </View>
             )}
         />      

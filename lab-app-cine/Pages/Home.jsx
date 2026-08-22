@@ -17,7 +17,7 @@ export default function Home() {
   },[]);
 
   if (!peliculas || !series) {
-    return (<Text>Ocurrio un error</Text>)
+    return (<Text style={[styles.container,{color:'white'}]}>Ocurrio un error</Text>);
   }
 
   return(

@@ -29,7 +29,7 @@ export default function Info({route}) {
     })
 
     if (elemento.length===0) {
-        return (<Text>Ocurrio un error</Text>)
+        return (<Text style={[styles.container,{color:'white'}]}>Ocurrio un error</Text>);
     }
 
     return (
